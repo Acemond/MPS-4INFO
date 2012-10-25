@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="9a1b6f27-c0da-4646-b53e-504053a16bac" name="UMLClassDiagram1" linkedPackageId="29d9b4e7-84d6-46cc-adc2-1b06be57f92e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ab422900-6d92-4241-ad2c-0bdf9f55a14e">
+      <profileInstance Id="bcb4b5fa-2c18-4d4a-9d43-e8ce382dab24" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="01398881-dc4f-4696-ac97-8125584a1d91">
+      <profileInstance Id="2859dea9-d608-4903-93b7-2ad19ab726b8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="37c6a865-c505-4b75-bfc5-e7a0b0b45cde" name="Bubbles" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="69e5e944-6000-4412-9fb3-15eb739fb254" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="c01977d4-da6b-48ea-9b90-c155e760dcc6" name="Note" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="296beaa9-76ae-4d93-b188-01cb17d09152" />
+        <generalsInternal>
+          <generalization Id="8b055714-79db-41f0-a101-0d02dde8c6b4" isSubstitutable="false">
+            <interfaceMoniker Id="37c6a865-c505-4b75-bfc5-e7a0b0b45cde" LastKnownName="Bubbles" />
+            <elementDefinition Id="abe65f69-0a30-4520-91be-1ce17a4115cd" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="e5434403-549f-4812-8467-e917804ad005" name="Rythm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="74e0234f-eed6-41a7-9526-0b6f873b1fe3" />
+        <generalsInternal>
+          <generalization Id="afcfdc75-3a3f-4519-a5b7-ac043b4dcbad" isSubstitutable="false">
+            <interfaceMoniker Id="37c6a865-c505-4b75-bfc5-e7a0b0b45cde" LastKnownName="Bubbles" />
+            <elementDefinition Id="c04bf993-037c-4f35-aedd-12abb929e10e" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="b0dcfea3-82ee-4af3-8b11-e0dcc47673c2" name="Generators" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c4c4cb29-7a99-4ad8-a550-d2e0a46a75a4" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="d601fbba-167a-4cb2-bb0f-97107e28a7a3" name="NoteGene" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dc966caa-6bc7-4e6f-aef3-73469202c32a" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="d7a9ed8b-45ac-4dd6-a83b-6eaa4dbaeacb" name="RythmGene" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cc38e273-f836-4cd2-aaec-1e5fa580ee46" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="29d9b4e7-84d6-46cc-adc2-1b06be57f92e" name="modele">
+    <elementDefinition Id="071e5591-5d99-4099-80a0-fe8c8f2ff67e" />
+  </package>
+</logicalClassDesignerModel>
