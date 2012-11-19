@@ -16,16 +16,10 @@
           </interfaceRealization>
         </suppliersInternal>
         <ownedAttributesInternal>
-          <property Id="fbe824d0-fd78-42b6-854d-708fba61ad50" name="melody" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="fbe824d0-fd78-42b6-854d-708fba61ad50" name="_melody" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="945428b0-22a4-46ad-a807-e40a870eff23" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="3a03c47c-0504-4df4-8a2b-d64fc8f8a912" LastKnownName="Melody" />
-            </type_NamedElement>
-          </property>
-          <property Id="c7883a43-71e2-4a28-8908-177998a2f1de" name="idMelody" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="815c161e-ba02-46d0-b445-5342b65869bb" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="89849468-d532-4482-80fc-874e78cce5f9" LastKnownName="Melody" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -41,16 +35,10 @@
           </interfaceRealization>
         </suppliersInternal>
         <ownedAttributesInternal>
-          <property Id="465e6802-30d0-4a3d-a0a4-1ad1bb5459c5" name="note" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="465e6802-30d0-4a3d-a0a4-1ad1bb5459c5" name="_note" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="84cc2c41-50f2-4a31-a631-080af5ad07dc" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="a2517190-8203-46c1-91d0-71c3a3403f1e" LastKnownName="Note" />
-            </type_NamedElement>
-          </property>
-          <property Id="2eb863d7-8858-451c-b2cd-0ce6c82c480c" name="idNote" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="272e4ebf-52b2-4c9b-bcb8-127b40d07af7" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="aea95e52-3796-4c38-b4a9-85c1adcd2397" LastKnownName="Note" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -60,16 +48,16 @@
       <class Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" name="Note" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573" />
         <ownedAttributesInternal>
-          <property Id="7aeeae78-0b84-444a-a618-00f1cb588bac" name="pitch" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="7aeeae78-0b84-444a-a618-00f1cb588bac" name="_pitch" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="155cb299-cca6-4b28-a523-e05fcd7669bb" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="8c49bc72-fb0c-4c90-ba69-d78b637a4f0e" LastKnownName="PitchClasses" />
+              <referencedTypeMoniker Id="11a6f3ac-3db6-4c2e-81c6-8306792b62a9" LastKnownName="PitchClasses" />
             </type_NamedElement>
           </property>
-          <property Id="0b183edf-c8e6-4723-ba00-050537633ff0" name="duration" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="0b183edf-c8e6-4723-ba00-050537633ff0" name="_duration" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f1a2d1d9-2901-4241-9670-f9abc7b102e1" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="3c0f709c-a297-451f-a0b4-13efe13db403" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -109,29 +97,19 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="e39b3708-288f-43c1-a9a4-fe9544159e65" name="Audio" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="d99a6561-5dff-4cf2-9e25-d8c3e7411b73" />
-        <ownedOperationsInternal>
-          <operation Id="4d40fc14-7342-43bf-9238-9448e0b72262" name="loadAudioEngine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="8c6f39fe-be45-46be-9a7e-4b251febbbde" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="6b22a899-5bb8-4c6b-afdc-03eb8ea46047" name="Melody" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e25e7953-1f4f-4a5b-8034-7cfb77e9e573" />
         <ownedAttributesInternal>
-          <property Id="4f598bd0-f7fc-475f-986b-15d61ae02797" name="notes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="4f598bd0-f7fc-475f-986b-15d61ae02797" name="_notes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="11f22b0e-744b-4963-83da-bb9163c0b422" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="d9144fba-2cb4-4355-95d8-37b7bbfed1d5" LastKnownName="List&lt;Note&gt;" />
+              <referencedTypeMoniker Id="b81600ad-2b8b-4549-8734-ecf756c4413d" LastKnownName="List&lt;Note&gt;" />
             </type_NamedElement>
           </property>
-          <property Id="9a4fcf64-6a63-4183-b1ab-e170e90319de" name="symbol" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="9a4fcf64-6a63-4183-b1ab-e170e90319de" name="_symbol" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ae0c1f35-db26-4472-a097-35102736da0e" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="5c5c2d18-1741-46a5-aea6-5cd95ad72ace" LastKnownName="Gestures" />
+              <referencedTypeMoniker Id="4a6b90bb-fc94-468c-829d-bac9d487f3fd" LastKnownName="Gestures" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -141,10 +119,10 @@
       <class Id="250ba5a5-5174-4495-95f9-6ba264d1dc4a" name="MelodyFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="cf9890e3-fc48-459c-82a2-3ffe49cc72cc" />
         <ownedAttributesInternal>
-          <property Id="52250641-c06c-495e-9300-e125be9c0f8a" name="melodies" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="52250641-c06c-495e-9300-e125be9c0f8a" name="_melodies" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="15b0c8b5-e0d2-4bbd-acef-e88650581e88" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="32511de0-5b4d-4540-99bc-d14c5a3af752" LastKnownName="Dictionnary&lt;Gestures, List&lt;Note&gt;&gt;" />
+              <referencedTypeMoniker Id="409b324f-5e47-40dd-b265-cd2fb2c3a5d6" LastKnownName="Dictionnary&lt;Gestures, List&lt;Note&gt;&gt;" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -185,10 +163,10 @@
       <class Id="248d183f-456f-46e4-8024-6ce71e67252b" name="NoteFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d0e5647b-c65b-428d-87aa-f066e1bf4437" />
         <ownedAttributesInternal>
-          <property Id="788cb464-b0ba-4178-8a6c-ea5fb26d6684" name="notes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="788cb464-b0ba-4178-8a6c-ea5fb26d6684" name="_notes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="cd6fa074-ed46-42cc-9c43-40a6344ee224" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="c5c2642f-abb2-4590-90f9-b80e2ed2dc3d" LastKnownName="Dictionnary&lt;NoteValues, Integer&gt;" />
+              <referencedTypeMoniker Id="7ce3bce7-f132-48af-8da3-9dfa6c07f2e6" LastKnownName="Dictionnary&lt;NoteValues, Integer&gt;" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -216,36 +194,6 @@
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
       </referencedType>
     </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="8c49bc72-fb0c-4c90-ba69-d78b637a4f0e" name="PitchClasses" isAbstract="false" isLeaf="false" cachedFullName="modele::PitchClasses">
-        <elementDefinition Id="720c7c34-b714-4a6b-babf-b611697458d9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="3a03c47c-0504-4df4-8a2b-d64fc8f8a912" name="Melody" isAbstract="false" isLeaf="false" cachedFullName="modele::Melody">
-        <elementDefinition Id="e25e7953-1f4f-4a5b-8034-7cfb77e9e573" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="a2517190-8203-46c1-91d0-71c3a3403f1e" name="Note" isAbstract="false" isLeaf="false" cachedFullName="modele::Note">
-        <elementDefinition Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="d9144fba-2cb4-4355-95d8-37b7bbfed1d5" name="List&lt;Note&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Note&gt;">
-        <elementDefinition Id="01db7ba1-242f-42df-9139-e74bbeddd191" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="5c5c2d18-1741-46a5-aea6-5cd95ad72ace" name="Gestures" isAbstract="false" isLeaf="false" cachedFullName="modele::Gestures">
-        <elementDefinition Id="63982947-9e12-4045-9179-e019023f91c4" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="32511de0-5b4d-4540-99bc-d14c5a3af752" name="Dictionnary&lt;Gestures, List&lt;Note&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionnary&lt;Gestures, List&lt;Note&gt;&gt;">
-        <elementDefinition Id="2fa16767-2922-461b-9e91-350cc85dc7b4" />
-      </referencedType>
-    </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
       <enumeration Id="bd2a13c4-d387-4928-bf8a-febc22cfae48" name="NoteValues" isAbstract="false" isLeaf="false">
         <elementDefinition Id="b4cdf9f0-b277-4b93-9aa5-12626348b143" />
@@ -265,9 +213,57 @@
         </ownedLiterals>
       </enumeration>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cc9fffcc-55a8-4b07-a6ad-6d1f516ccb9b" name="Stave" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2af0b63d-bf6c-4655-8183-e7bb11c5bd74" />
+        <ownedAttributesInternal>
+          <property Id="cbdb7977-d339-476d-ac7e-6907afe40e0d" name="_maxnote" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="10eca3ed-9983-4137-9b4e-761c8f735f76" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="c5c2642f-abb2-4590-90f9-b80e2ed2dc3d" name="Dictionnary&lt;NoteValues, Integer&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionnary&lt;NoteValues, Integer&gt;">
+      <referencedType Id="89849468-d532-4482-80fc-874e78cce5f9" name="Melody" isAbstract="false" isLeaf="false" cachedFullName="modele::Melody">
+        <elementDefinition Id="e25e7953-1f4f-4a5b-8034-7cfb77e9e573" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="aea95e52-3796-4c38-b4a9-85c1adcd2397" name="Note" isAbstract="false" isLeaf="false" cachedFullName="modele::Note">
+        <elementDefinition Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3c0f709c-a297-451f-a0b4-13efe13db403" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="11a6f3ac-3db6-4c2e-81c6-8306792b62a9" name="PitchClasses" isAbstract="false" isLeaf="false" cachedFullName="modele::PitchClasses">
+        <elementDefinition Id="720c7c34-b714-4a6b-babf-b611697458d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7ce3bce7-f132-48af-8da3-9dfa6c07f2e6" name="Dictionnary&lt;NoteValues, Integer&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionnary&lt;NoteValues, Integer&gt;">
         <elementDefinition Id="4b77a1e4-ab97-4a7f-9ed6-81031680485d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b81600ad-2b8b-4549-8734-ecf756c4413d" name="List&lt;Note&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Note&gt;">
+        <elementDefinition Id="01db7ba1-242f-42df-9139-e74bbeddd191" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4a6b90bb-fc94-468c-829d-bac9d487f3fd" name="Gestures" isAbstract="false" isLeaf="false" cachedFullName="modele::Gestures">
+        <elementDefinition Id="63982947-9e12-4045-9179-e019023f91c4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="409b324f-5e47-40dd-b265-cd2fb2c3a5d6" name="Dictionnary&lt;Gestures, List&lt;Note&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionnary&lt;Gestures, List&lt;Note&gt;&gt;">
+        <elementDefinition Id="2fa16767-2922-461b-9e91-350cc85dc7b4" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

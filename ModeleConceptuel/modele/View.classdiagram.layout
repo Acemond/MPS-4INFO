@@ -9,5 +9,12 @@
         <OperationElementListCompartment Id="fcdd7d7c-4c3c-4383-9efd-79acbd106091" absoluteBounds="0.5149999999999999, 2.1167968476812042, 1.9700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="7cd81c43-991e-4a62-b470-203e86747fca" absoluteBounds="3.875, 0.875, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="bd512b77-9c6a-45b4-a602-4931f5102d37" LastKnownName="StaveView" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="49bf8d47-a9e3-4bf4-81b9-a3d6e77a23c1" absoluteBounds="3.8899999999999997, 1.2650000000000001, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="dc708ff4-e8a3-4beb-bc15-686082b184f8" absoluteBounds="3.8899999999999997, 1.4761718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>

@@ -44,7 +44,7 @@
         <ownedAttributesInternal>
           <property
             Id="945428b0-22a4-46ad-a807-e40a870eff23"
-            name="melody"
+            name="_melody"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -58,25 +58,6 @@
               <classMoniker
                 Id="e25e7953-1f4f-4a5b-8034-7cfb77e9e573"
                 LastKnownName="Melody"
-                LastKnownLocation="modele.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="815c161e-ba02-46d0-b445-5342b65869bb"
-            name="idMelody"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
                 LastKnownLocation="modele.uml" />
             </type_NamedElement>
           </property>
@@ -102,7 +83,7 @@
         <ownedAttributesInternal>
           <property
             Id="84cc2c41-50f2-4a31-a631-080af5ad07dc"
-            name="note"
+            name="_note"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -116,25 +97,6 @@
               <classMoniker
                 Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573"
                 LastKnownName="Note"
-                LastKnownLocation="modele.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="272e4ebf-52b2-4c9b-bcb8-127b40d07af7"
-            name="idNote"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
                 LastKnownLocation="modele.uml" />
             </type_NamedElement>
           </property>
@@ -156,7 +118,7 @@
         <ownedAttributesInternal>
           <property
             Id="155cb299-cca6-4b28-a523-e05fcd7669bb"
-            name="pitch"
+            name="_pitch"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -175,7 +137,7 @@
           </property>
           <property
             Id="f1a2d1d9-2901-4241-9670-f9abc7b102e1"
-            name="duration"
+            name="_duration"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -236,25 +198,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="d99a6561-5dff-4cf2-9e25-d8c3e7411b73"
-        name="Audio"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <ownedOperationsInternal>
-          <operation
-            Id="8c6f39fe-be45-46be-9a7e-4b251febbbde"
-            name="loadAudioEngine"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-        </ownedOperationsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
         Id="e25e7953-1f4f-4a5b-8034-7cfb77e9e573"
         name="Melody"
         isAbstract="false"
@@ -263,7 +206,7 @@
         <ownedAttributesInternal>
           <property
             Id="11f22b0e-744b-4963-83da-bb9163c0b422"
-            name="notes"
+            name="_notes"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -282,7 +225,7 @@
           </property>
           <property
             Id="ae0c1f35-db26-4472-a097-35102736da0e"
-            name="symbol"
+            name="_symbol"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -312,7 +255,7 @@
         <ownedAttributesInternal>
           <property
             Id="15b0c8b5-e0d2-4bbd-acef-e88650581e88"
-            name="melodies"
+            name="_melodies"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -389,7 +332,7 @@
         <ownedAttributesInternal>
           <property
             Id="cd6fa074-ed46-42cc-9c43-40a6344ee224"
-            name="notes"
+            name="_notes"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -635,6 +578,145 @@
       <undefinedType
         Id="f353fa82-9dfb-4a5a-8baa-48baf946d195"
         name="DispatcherTimer" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2af0b63d-bf6c-4655-8183-e7bb11c5bd74"
+        name="Stave"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="10eca3ed-9983-4137-9b4e-761c8f735f76"
+            name="_maxnote"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cd0debf2-974b-49cf-9562-ae6a7f5e1fbb"
+        name="StaveView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2d9f1bc4-c6cd-450b-80e5-d9b38a028e35"
+        name="AudioEngine" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c38e6eab-2a1b-46ee-992f-ff64dc127649"
+        name="WaveBank" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="28fa6156-d0c5-4294-b280-15b89e7dafa0"
+        name="SoundBank" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="96c56727-0315-4009-821a-b8a7caa601e7"
+        name="AudioController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="fbb4e787-6238-4388-a573-59286283ef51"
+            name="_audioEngine"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2d9f1bc4-c6cd-450b-80e5-d9b38a028e35"
+                LastKnownName="AudioEngine"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="edc142c3-7856-40b8-8a51-ade377684e60"
+            name="_waveBank"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="c38e6eab-2a1b-46ee-992f-ff64dc127649"
+                LastKnownName="WaveBank"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ebed0951-a901-4959-951f-1d20ae1d75e4"
+            name="_soundBank"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="28fa6156-d0c5-4294-b280-15b89e7dafa0"
+                LastKnownName="SoundBank"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a6f8e57d-6b5d-4104-a740-6635166f3fb7"
+            name="loadAudioEngine"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="023335dc-9f61-41d2-9f7c-340a0a48b5ad"
+            name="playSound"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

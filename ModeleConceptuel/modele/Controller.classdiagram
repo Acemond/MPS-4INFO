@@ -1,1 +1,70 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="6ceef73f-93c3-4ac0-8fbb-053d1767c010" name="Controller" linkedPackageId="5d5e0eaa-5bee-4196-b178-5df4ffec4fea" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="5d441f04-9b64-4cf8-99c5-ebd3b24a9bf5">
+      <profileInstance Id="b160eeb8-db9d-480e-9171-01ba5799b4ad" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cfbbcc2a-1e5a-4197-94e1-f30a4c7778e7">
+      <profileInstance Id="9db2c5dc-bcd7-484e-9919-cab904493d1a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="ccd2f64a-b321-42f5-9bdd-b499b1a51a1c" name="AudioEngine" isAbstract="false" isLeaf="false" cachedFullName="AudioEngine">
+        <elementDefinition Id="2d9f1bc4-c6cd-450b-80e5-d9b38a028e35" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0cce0784-87d2-42e0-9c40-ce09dfb94f8a" name="WaveBank" isAbstract="false" isLeaf="false" cachedFullName="WaveBank">
+        <elementDefinition Id="c38e6eab-2a1b-46ee-992f-ff64dc127649" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f060e701-3b7b-4097-a12a-85799013f0ad" name="SoundBank" isAbstract="false" isLeaf="false" cachedFullName="SoundBank">
+        <elementDefinition Id="28fa6156-d0c5-4294-b280-15b89e7dafa0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="feadef9c-9fd8-4c08-96b4-ba0426884995" name="AudioController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="96c56727-0315-4009-821a-b8a7caa601e7" />
+        <ownedAttributesInternal>
+          <property Id="a038dbfb-a080-4beb-a10f-33872d84f9ec" name="_audioEngine" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fbb4e787-6238-4388-a573-59286283ef51" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ccd2f64a-b321-42f5-9bdd-b499b1a51a1c" LastKnownName="AudioEngine" />
+            </type_NamedElement>
+          </property>
+          <property Id="6c3b1a15-c1ba-405a-b483-2bf8c37e2083" name="_waveBank" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="edc142c3-7856-40b8-8a51-ade377684e60" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0cce0784-87d2-42e0-9c40-ce09dfb94f8a" LastKnownName="WaveBank" />
+            </type_NamedElement>
+          </property>
+          <property Id="a9eeeb0e-1849-42a9-bf70-126709f18976" name="_soundBank" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ebed0951-a901-4959-951f-1d20ae1d75e4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f060e701-3b7b-4097-a12a-85799013f0ad" LastKnownName="SoundBank" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1bbf9c65-7190-4673-a3c0-43e33adc3853" name="loadAudioEngine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a6f8e57d-6b5d-4104-a740-6635166f3fb7" />
+          </operation>
+          <operation Id="a1c6c377-dd1e-44c3-afd8-006669300e88" name="playSound" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="023335dc-9f61-41d2-9f7c-340a0a48b5ad" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="5d5e0eaa-5bee-4196-b178-5df4ffec4fea" name="modele">
+    <elementDefinition Id="071e5591-5d99-4099-80a0-fe8c8f2ff67e" />
+  </package>
+</logicalClassDesignerModel>

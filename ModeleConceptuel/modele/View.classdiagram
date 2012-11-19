@@ -52,6 +52,11 @@
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bd512b77-9c6a-45b4-a602-4931f5102d37" name="StaveView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cd0debf2-974b-49cf-9562-ae6a7f5e1fbb" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="6ceabff9-1a2b-4c9a-be51-a6c120c3730f" name="modele">
     <elementDefinition Id="071e5591-5d99-4099-80a0-fe8c8f2ff67e" />
