@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="af18058b-4ad0-42e1-8773-93ad56aa4c77" name="View" linkedPackageId="6ceabff9-1a2b-4c9a-be51-a6c120c3730f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c54e51d3-9a65-40d0-b8ed-28c7d66c0c7b">
+      <profileInstance Id="fba9a8f0-1c5f-401a-82d2-836e93fe8437" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6de91d2d-4d6e-4a5c-b867-a2e9f87bc9a0">
+      <profileInstance Id="cc08b97b-4fbd-4f9c-842b-7b0ac4e7df6e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fe16c176-bf75-49ce-9341-b98d5ae7e6c7" name="MelodyBubbleView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2de0ef8d-eac7-4300-a140-9b54303c1562" />
+        <generalsInternal>
+          <generalization Id="afa9e01b-1849-40eb-a957-de33052bc9ee" isSubstitutable="false">
+            <classMoniker Id="c34416d6-287d-43ce-b7f1-c7a78056eb4a" LastKnownName="BubbleView" />
+            <elementDefinition Id="8bc8416b-e303-46d5-b08a-cd0de309c769" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0774a3f4-f7ea-4244-a155-8d79ba338128" name="NoteBubbleView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8394bfbb-54cd-46ba-9f67-97feda67dd10" />
+        <generalsInternal>
+          <generalization Id="226e5a42-1ada-40b8-850c-04f9eb70af00" isSubstitutable="false">
+            <classMoniker Id="c34416d6-287d-43ce-b7f1-c7a78056eb4a" LastKnownName="BubbleView" />
+            <elementDefinition Id="92f82cb9-e22f-4e9b-a4ed-e9b4888f8c98" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c34416d6-287d-43ce-b7f1-c7a78056eb4a" name="BubbleView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="637dbe02-0c5c-449f-ab2b-1ae87bf0701b" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6ceabff9-1a2b-4c9a-be51-a6c120c3730f" name="modele">
+    <elementDefinition Id="071e5591-5d99-4099-80a0-fe8c8f2ff67e" />
+  </package>
+</logicalClassDesignerModel>

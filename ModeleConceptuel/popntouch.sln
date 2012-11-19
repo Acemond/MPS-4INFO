@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "modele", "modele\modele.modelproj", "{681BE60D-C096-4C3C-B9AD-4EEA78C9AD1E}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "popntouch", "modele\popntouch.modelproj", "{681BE60D-C096-4C3C-B9AD-4EEA78C9AD1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

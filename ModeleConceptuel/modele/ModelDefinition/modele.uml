@@ -21,7 +21,7 @@
     <packageHasNamedElement>
       <Interface
         Id="7da4f92f-5be0-4ed9-a7b2-a53b37e805ab"
-        name="Bubble"
+        name="IBubble"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
@@ -37,34 +37,15 @@
             Id="5c166abd-9fff-486b-a02f-773196c4dd5c">
             <interfaceMoniker
               Id="7da4f92f-5be0-4ed9-a7b2-a53b37e805ab"
-              LastKnownName="Bubble"
+              LastKnownName="IBubble"
               LastKnownLocation="modele.uml" />
           </interfaceRealization>
         </suppliersInternal>
         <ownedAttributesInternal>
           <property
-            Id="074b9a30-2421-4234-a578-258b69026099"
-            name="melody"
-            visibility="Protected"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="01db7ba1-242f-42df-9139-e74bbeddd191"
-                LastKnownName="List&lt;Note&gt;"
-                LastKnownLocation="modele.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="945428b0-22a4-46ad-a807-e40a870eff23"
-            name="symbol"
-            visibility="Protected"
+            name="melody"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -74,9 +55,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="98bf7bc7-46a2-4245-bcc7-67fd907a6a7e"
-                LastKnownName="MelodySymbol"
+              <classMoniker
+                Id="e25e7953-1f4f-4a5b-8034-7cfb77e9e573"
+                LastKnownName="Melody"
                 LastKnownLocation="modele.uml" />
             </type_NamedElement>
           </property>
@@ -95,7 +76,7 @@
             Id="4d76be50-c138-43f7-9c5b-779bce26bf71">
             <interfaceMoniker
               Id="7da4f92f-5be0-4ed9-a7b2-a53b37e805ab"
-              LastKnownName="Bubble"
+              LastKnownName="IBubble"
               LastKnownLocation="modele.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -103,7 +84,7 @@
           <property
             Id="84cc2c41-50f2-4a31-a631-080af5ad07dc"
             name="note"
-            visibility="Protected"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -113,8 +94,8 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="d73f48ed-7b82-4058-a070-2870b87b00ff"
+              <classMoniker
+                Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573"
                 LastKnownName="Note"
                 LastKnownLocation="modele.uml" />
             </type_NamedElement>
@@ -128,16 +109,6 @@
         name="List&lt;Note&gt;" />
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <undefinedType
-        Id="98bf7bc7-46a2-4245-bcc7-67fd907a6a7e"
-        name="MelodySymbol" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <undefinedType
-        Id="d73f48ed-7b82-4058-a070-2870b87b00ff"
-        name="Note" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <class
         Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573"
         name="Note"
@@ -148,7 +119,7 @@
           <property
             Id="155cb299-cca6-4b28-a523-e05fcd7669bb"
             name="pitch"
-            visibility="Protected"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -158,8 +129,8 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="e5b011b1-3cd5-4616-9d00-924c6319137f"
+              <enumerationMoniker
+                Id="720c7c34-b714-4a6b-babf-b611697458d9"
                 LastKnownName="PitchClasses"
                 LastKnownLocation="modele.uml" />
             </type_NamedElement>
@@ -167,7 +138,7 @@
           <property
             Id="f1a2d1d9-2901-4241-9670-f9abc7b102e1"
             name="duration"
-            visibility="Protected"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -185,11 +156,6 @@
           </property>
         </ownedAttributesInternal>
       </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <undefinedType
-        Id="e5b011b1-3cd5-4616-9d00-924c6319137f"
-        name="PitchClasses" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <enumeration
@@ -224,18 +190,279 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="48ec3e19-f066-4763-bb0b-f68eaddf6dd0"
-        name="HalfNote"
+        Id="98441cfc-2e69-408d-b783-50af7e4d3b62"
+        name="Instrument"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d99a6561-5dff-4cf2-9e25-d8c3e7411b73"
+        name="Audio"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="8c6f39fe-be45-46be-9a7e-4b251febbbde"
+            name="loadAudioEngine"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e25e7953-1f4f-4a5b-8034-7cfb77e9e573"
+        name="Melody"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="11f22b0e-744b-4963-83da-bb9163c0b422"
+            name="notes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="01db7ba1-242f-42df-9139-e74bbeddd191"
+                LastKnownName="List&lt;Note&gt;"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ae0c1f35-db26-4472-a097-35102736da0e"
+            name="symbol"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="63982947-9e12-4045-9179-e019023f91c4"
+                LastKnownName="Gestures"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cf9890e3-fc48-459c-82a2-3ffe49cc72cc"
+        name="MelodyFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="15b0c8b5-e0d2-4bbd-acef-e88650581e88"
+            name="melodies"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2fa16767-2922-461b-9e91-350cc85dc7b4"
+                LastKnownName="Dictionnary&lt;Gestures, List&lt;Note&gt;&gt;"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="56068e4a-3160-48f0-810f-54f25bcb5534"
+            name="createMelody"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3efd2c02-f38c-42aa-acc1-f830381022c0"
+                  name="Gestures"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="63982947-9e12-4045-9179-e019023f91c4"
+        name="Gestures"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="91941267-ada8-4db8-8c9b-aa88d155acaa"
+            name="Wave" />
+          <enumerationLiteral
+            Id="04626dee-d15c-4283-a891-b81574b8920e"
+            name="Square" />
+          <enumerationLiteral
+            Id="6270ce5b-508d-4a5b-bcec-78020c22eb48"
+            name="Infinite" />
+          <enumerationLiteral
+            Id="9a7ee73a-a575-4bd1-a5f1-a82aa6b67ef9"
+            name="Corner" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2fa16767-2922-461b-9e91-350cc85dc7b4"
+        name="Dictionnary&lt;Gestures, List&lt;Note&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d0e5647b-c65b-428d-87aa-f066e1bf4437"
+        name="NoteFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="cd6fa074-ed46-42cc-9c43-40a6344ee224"
+            name="notes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4b77a1e4-ab97-4a7f-9ed6-81031680485d"
+                LastKnownName="Dictionnary&lt;NoteValues, Integer&gt;"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bfbfa6a6-71c3-44a8-b95a-d2238d23dbaf"
+            name="createNote"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a976383e-e4bc-4b3b-ac83-7b9e633dc9c5"
+                  name="NoteValue"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3ac3476b-a1e2-497d-92b1-e4a4bd6b8c08"
+                  name="PitchClasses"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="b4cdf9f0-b277-4b93-9aa5-12626348b143"
+        name="NoteValues"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="20daac05-6c4b-4235-a1f8-048fa40e8ba0"
+            name="HalfNote" />
+          <enumerationLiteral
+            Id="d8465d08-7551-4211-aec8-bf5aac4f0eee"
+            name="QuarterNote" />
+          <enumerationLiteral
+            Id="65bcc360-f5da-4e74-8f04-b595803377ff"
+            name="EightNote" />
+          <enumerationLiteral
+            Id="ec5b57ae-1564-4ce4-9770-d4a0197a012c"
+            name="Silence" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4b77a1e4-ab97-4a7f-9ed6-81031680485d"
+        name="Dictionnary&lt;NoteValues, Integer&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="73249733-91f8-4b54-95bc-9d2e711f9057"
+        name="BubbleView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b8836149-27d5-402a-b9f6-ace2aa05531d"
+        name="IBubbleView"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2de0ef8d-eac7-4300-a140-9b54303c1562"
+        name="MelodyBubbleView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="806ae1a4-c57b-4a03-b46a-a7d964284509">
+            <interfaceMoniker
+              Id="b8836149-27d5-402a-b9f6-ace2aa05531d"
+              LastKnownName="IBubbleView"
+              LastKnownLocation="modele.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
         <generalsInternal>
           <generalization
-            Id="6f372373-f627-4c07-86d2-8c6dba3e9dfa"
+            Id="8bc8416b-e303-46d5-b08a-cd0de309c769"
             isSubstitutable="false">
             <classMoniker
-              Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573"
-              LastKnownName="Note"
+              Id="637dbe02-0c5c-449f-ab2b-1ae87bf0701b"
+              LastKnownName="BubbleView"
               LastKnownLocation="modele.uml" />
           </generalization>
         </generalsInternal>
@@ -243,18 +470,27 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="86d05bf0-cd98-4c39-a86b-1437b65ad7f6"
-        name="QuarterNote"
+        Id="8394bfbb-54cd-46ba-9f67-97feda67dd10"
+        name="NoteBubbleView"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="39611f1b-5e37-42a2-bad7-41bdcd36fd9d">
+            <interfaceMoniker
+              Id="b8836149-27d5-402a-b9f6-ace2aa05531d"
+              LastKnownName="IBubbleView"
+              LastKnownLocation="modele.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
         <generalsInternal>
           <generalization
-            Id="6eda0582-6847-4160-8705-e5b60f736564"
+            Id="92f82cb9-e22f-4e9b-a4ed-e9b4888f8c98"
             isSubstitutable="false">
             <classMoniker
-              Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573"
-              LastKnownName="Note"
+              Id="637dbe02-0c5c-449f-ab2b-1ae87bf0701b"
+              LastKnownName="BubbleView"
               LastKnownLocation="modele.uml" />
           </generalization>
         </generalsInternal>
@@ -262,41 +498,11 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="8db0a955-d527-45c4-a86d-f4e435b804c4"
-        name="EightNote"
+        Id="637dbe02-0c5c-449f-ab2b-1ae87bf0701b"
+        name="BubbleView"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <generalsInternal>
-          <generalization
-            Id="25dba7ef-8e40-44aa-a1bb-56a2b1f967f8"
-            isSubstitutable="false">
-            <classMoniker
-              Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573"
-              LastKnownName="Note"
-              LastKnownLocation="modele.uml" />
-          </generalization>
-        </generalsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="fae22fe5-0887-49a4-a653-56541c4012b9"
-        name="Silence"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <generalsInternal>
-          <generalization
-            Id="b9124508-5c4d-4c08-b605-bb407b45a466"
-            isSubstitutable="false">
-            <classMoniker
-              Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573"
-              LastKnownName="Note"
-              LastKnownLocation="modele.uml" />
-          </generalization>
-        </generalsInternal>
-      </class>
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

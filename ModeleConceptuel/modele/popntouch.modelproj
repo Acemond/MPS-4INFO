@@ -6,7 +6,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{681be60d-c096-4c3c-b9ad-4eea78c9ad1e}</ProjectGuid>
     <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
-    <Name>modele</Name>
+    <Name>popntouch</Name>
     <RootNamespace>modele</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -17,12 +17,26 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
-    <Content Include="popntouch.classdiagram">
+    <Content Include="Controller.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="popntouch.classdiagram.layout">
+    <Content Include="Controller.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>popntouch.classdiagram</DependentUpon>
+      <DependentUpon>Controller.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="View.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="View.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>View.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Model.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Model.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Model.classdiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\modele.uml">

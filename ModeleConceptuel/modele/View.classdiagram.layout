@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="View">
+  <logicalClassDesignerModelMoniker Id="af18058b-4ad0-42e1-8773-93ad56aa4c77" />
+  <nestedChildShapes>
+    <classShape Id="2e2dd172-c616-4171-bdf5-5fafd960c82d" absoluteBounds="0.5, 2, 1.75, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="fe16c176-bf75-49ce-9341-b98d5ae7e6c7" LastKnownName="MelodyBubbleView" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="e3080d1b-5654-40b5-97c7-a0efd52cb58c" absoluteBounds="0.515, 2.39, 1.7200000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="16376940-7c99-4d10-b3fb-9e33448fc116" absoluteBounds="0.515, 2.6011718675494193, 1.7200000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b73921b4-14e4-4bf4-8d9e-0f8c346145ef" absoluteBounds="2.875, 2, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="0774a3f4-f7ea-4244-a155-8d79ba338128" LastKnownName="NoteBubbleView" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="8aa9d893-7465-468e-b822-d59a32f12c74" absoluteBounds="2.89, 2.39, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="bdb6f1b5-9cad-4966-859e-a22f71f5661b" absoluteBounds="2.89, 2.6011718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3c2730ca-6c17-41d8-9691-fa1a9e7e0bb5" absoluteBounds="1.875, 0.75, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="c34416d6-287d-43ce-b7f1-c7a78056eb4a" LastKnownName="BubbleView" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="78f2b14b-4326-4efd-83ab-f2f06b3de075" absoluteBounds="1.8900000000000001, 1.1400000000000001, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="fcdd7d7c-4c3c-4383-9efd-79acbd106091" absoluteBounds="1.8900000000000001, 1.3511718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(1.375 : 2); (1.375 : 1.85234373509884); (2.625 : 1.85234373509884); (2.625 : 1.65234373509884)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="afa9e01b-1849-40eb-a957-de33052bc9ee" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="2.2569444440305233, 2, 0.125, 0.1341145783662796" shapeFieldName="Stereotype" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <classShapeMoniker Id="2e2dd172-c616-4171-bdf5-5fafd960c82d" />
+        <classShapeMoniker Id="3c2730ca-6c17-41d8-9691-fa1a9e7e0bb5" />
+      </nodes>
+    </generalizationConnector>
+    <generalizationConnector edgePoints="[(3.625 : 2); (3.625 : 1.85234373509884); (2.625 : 1.85234373509884); (2.625 : 1.65234373509884)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="226e5a42-1ada-40b8-850c-04f9eb70af00" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="b73921b4-14e4-4bf4-8d9e-0f8c346145ef" />
+        <classShapeMoniker Id="3c2730ca-6c17-41d8-9691-fa1a9e7e0bb5" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
