@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="9a1b6f27-c0da-4646-b53e-504053a16bac" name="UMLClassDiagram1" linkedPackageId="29d9b4e7-84d6-46cc-adc2-1b06be57f92e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="dc0ba1f8-2fab-46db-a929-ccc37969ae09" name="Bubble" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7da4f92f-5be0-4ed9-a7b2-a53b37e805ab" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3dbea66b-6d99-4fa6-ae65-f6bdb2199e8e" name="MelodyBubble" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5e4e59d2-cc81-4e5a-81a3-11ab150373e7" />
+        <suppliersInternal>
+          <interfaceRealization Id="4888040b-f00f-4d49-977f-540dd7aa2902">
+            <interfaceMoniker Id="dc0ba1f8-2fab-46db-a929-ccc37969ae09" LastKnownName="Bubble" />
+            <elementDefinition Id="5c166abd-9fff-486b-a02f-773196c4dd5c" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="69d2adb2-214c-4e85-af6d-f1b945652db9" name="melody" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="074b9a30-2421-4234-a578-258b69026099" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="97fbf9cf-e40e-4433-9f6d-62b1ab07b515" LastKnownName="List&lt;Note&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="fbe824d0-fd78-42b6-854d-708fba61ad50" name="symbol" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="945428b0-22a4-46ad-a807-e40a870eff23" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="89467f9f-af6b-4b42-8e7a-a12389765183" LastKnownName="MelodySymbol" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="150c2154-c9d9-4ef2-bd9f-e1c4689234a3" name="NoteBubble" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="14f256a1-1fcb-4b91-93aa-7713e94e832f" />
+        <suppliersInternal>
+          <interfaceRealization Id="f23fa30a-4a53-410b-b80b-30e033c59e28">
+            <interfaceMoniker Id="dc0ba1f8-2fab-46db-a929-ccc37969ae09" LastKnownName="Bubble" />
+            <elementDefinition Id="4d76be50-c138-43f7-9c5b-779bce26bf71" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="465e6802-30d0-4a3d-a0a4-1ad1bb5459c5" name="note" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="84cc2c41-50f2-4a31-a631-080af5ad07dc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ec80ebed-69fd-4760-b1a8-68e8273cab50" LastKnownName="Note" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="97fbf9cf-e40e-4433-9f6d-62b1ab07b515" name="List&lt;Note&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Note&gt;">
+        <elementDefinition Id="01db7ba1-242f-42df-9139-e74bbeddd191" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="89467f9f-af6b-4b42-8e7a-a12389765183" name="MelodySymbol" isAbstract="false" isLeaf="false" cachedFullName="MelodySymbol">
+        <elementDefinition Id="98bf7bc7-46a2-4245-bcc7-67fd907a6a7e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ec80ebed-69fd-4760-b1a8-68e8273cab50" name="Note" isAbstract="false" isLeaf="false" cachedFullName="Note">
+        <elementDefinition Id="d73f48ed-7b82-4058-a070-2870b87b00ff" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" name="Note" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573" />
+        <ownedAttributesInternal>
+          <property Id="7aeeae78-0b84-444a-a618-00f1cb588bac" name="pitch" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="155cb299-cca6-4b28-a523-e05fcd7669bb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a8f48455-1ab0-4d77-b962-5c08d35f8601" LastKnownName="PitchClasses" />
+            </type_NamedElement>
+          </property>
+          <property Id="0b183edf-c8e6-4723-ba00-050537633ff0" name="duration" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f1a2d1d9-2901-4241-9670-f9abc7b102e1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4e1bdfd4-bfcb-4ec6-9934-9b849ee58a36" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a8f48455-1ab0-4d77-b962-5c08d35f8601" name="PitchClasses" isAbstract="false" isLeaf="false" cachedFullName="PitchClasses">
+        <elementDefinition Id="e5b011b1-3cd5-4616-9d00-924c6319137f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="5105624f-8051-4b00-b158-ff9f20ba4d34" name="PitchClasses" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="720c7c34-b714-4a6b-babf-b611697458d9" />
+        <ownedLiterals>
+          <enumerationLiteral Id="6ee7178e-5902-40fc-8cb1-86ac2a38d1e9" name="A">
+            <elementDefinition Id="cfb79104-8c4e-402b-930a-52c32f0d3dac" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="a6951347-4c73-4929-ae24-312a2bc49238" name="B">
+            <elementDefinition Id="79bb6563-3a0d-4f80-89e1-a2a3a2be6781" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="29fe3bc1-4a80-409f-8ad6-dc7982a29736" name="C">
+            <elementDefinition Id="1361b66c-ef98-4cd4-8d9e-d54477bd2169" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="375dc188-0ea2-407b-84b3-2f54a9f8e8da" name="E">
+            <elementDefinition Id="5137b408-1384-46a5-8aad-a3cd0c312490" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="94d8ac95-fbd0-42c1-8ad1-c447bb650c8c" name="D">
+            <elementDefinition Id="749f09c1-9548-41d2-8b6a-347db50d2e7c" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="7cdac348-b0ae-4a3b-b41e-e837180ac077" name="F">
+            <elementDefinition Id="5eac542a-68b5-474d-9bd0-ee7d42251e2f" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="3107501e-527d-4c13-96fc-5ee3ad533f85" name="G">
+            <elementDefinition Id="dc8ddfc2-3633-4f63-8f3c-75e4fd06ddce" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d498a324-97e0-4aff-8fc0-4af434623f1e" name="HalfNote" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="48ec3e19-f066-4763-bb0b-f68eaddf6dd0" />
+        <generalsInternal>
+          <generalization Id="57715928-e6ae-4ea4-8dbe-5b622e4cbbee" isSubstitutable="false">
+            <classMoniker Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" LastKnownName="Note" />
+            <elementDefinition Id="6f372373-f627-4c07-86d2-8c6dba3e9dfa" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="993cf7bf-2117-46ba-9c10-f819d129bb69" name="QuarterNote" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="86d05bf0-cd98-4c39-a86b-1437b65ad7f6" />
+        <generalsInternal>
+          <generalization Id="d6a0de6b-cf9b-4ff7-b44d-a21ab5710f1f" isSubstitutable="false">
+            <classMoniker Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" LastKnownName="Note" />
+            <elementDefinition Id="6eda0582-6847-4160-8705-e5b60f736564" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6b3dcd2b-daca-4189-9019-e9626f94fb56" name="EightNote" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8db0a955-d527-45c4-a86d-f4e435b804c4" />
+        <generalsInternal>
+          <generalization Id="246382ab-c957-4fae-9e8e-f6cd4a51e7e2" isSubstitutable="false">
+            <classMoniker Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" LastKnownName="Note" />
+            <elementDefinition Id="25dba7ef-8e40-44aa-a1bb-56a2b1f967f8" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="783d7a19-7d71-4e27-a4e8-2a5ed7eb4328" name="Silence" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fae22fe5-0887-49a4-a653-56541c4012b9" />
+        <generalsInternal>
+          <generalization Id="27c51f22-535e-4a97-bcd1-74adf031c649" isSubstitutable="false">
+            <classMoniker Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" LastKnownName="Note" />
+            <elementDefinition Id="b9124508-5c4d-4c08-b605-bb407b45a466" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="4e1bdfd4-bfcb-4ec6-9934-9b849ee58a36" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="29d9b4e7-84d6-46cc-adc2-1b06be57f92e" name="modele">
+    <elementDefinition Id="071e5591-5d99-4099-80a0-fe8c8f2ff67e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ab422900-6d92-4241-ad2c-0bdf9f55a14e">
+        <profileInstance Id="bcb4b5fa-2c18-4d4a-9d43-e8ce382dab24" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="01398881-dc4f-4696-ac97-8125584a1d91">
+        <profileInstance Id="2859dea9-d608-4903-93b7-2ad19ab726b8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
