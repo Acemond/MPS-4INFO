@@ -61,6 +61,25 @@
                 LastKnownLocation="modele.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="815c161e-ba02-46d0-b445-5342b65869bb"
+            name="idMelody"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -97,6 +116,25 @@
               <classMoniker
                 Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573"
                 LastKnownName="Note"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="272e4ebf-52b2-4c9b-bcb8-127b40d07af7"
+            name="idNote"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
                 LastKnownLocation="modele.uml" />
             </type_NamedElement>
           </property>
@@ -502,7 +540,101 @@
         name="BubbleView"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="e17a7035-ad09-43ab-b7a2-942c9d7aa2c4"
+            name="_svitem"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a0b2c951-441d-40cf-a53c-3179ada2b642"
+                LastKnownName="ScatterViewItem"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5aef5253-f5d4-492f-bfb7-ba2c9cd0194f"
+            name="_sv"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5e677bcf-16bc-4f3a-96e3-c11867c94326"
+                LastKnownName="ScatterView"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="04f98269-22cc-400d-895c-b6d68d4298f5"
+            name="_displayTimer"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f353fa82-9dfb-4a5a-8baa-48baf946d195"
+                LastKnownName="DispatcherTimer"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b40d4bcf-6268-424a-8695-8d0ad8895e90"
+            name="_angle"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="modele.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a0b2c951-441d-40cf-a53c-3179ada2b642"
+        name="ScatterViewItem" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5e677bcf-16bc-4f3a-96e3-c11867c94326"
+        name="ScatterView" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f353fa82-9dfb-4a5a-8baa-48baf946d195"
+        name="DispatcherTimer" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

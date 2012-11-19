@@ -22,6 +22,12 @@
               <referencedTypeMoniker Id="3a03c47c-0504-4df4-8a2b-d64fc8f8a912" LastKnownName="Melody" />
             </type_NamedElement>
           </property>
+          <property Id="c7883a43-71e2-4a28-8908-177998a2f1de" name="idMelody" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="815c161e-ba02-46d0-b445-5342b65869bb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -39,6 +45,12 @@
             <elementDefinition Id="84cc2c41-50f2-4a31-a631-080af5ad07dc" />
             <type_NamedElement>
               <referencedTypeMoniker Id="a2517190-8203-46c1-91d0-71c3a3403f1e" LastKnownName="Note" />
+            </type_NamedElement>
+          </property>
+          <property Id="2eb863d7-8858-451c-b2cd-0ce6c82c480c" name="idNote" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="272e4ebf-52b2-4c9b-bcb8-127b40d07af7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>

@@ -9,11 +9,11 @@
         <OperationElementListCompartment Id="2ad38502-d318-4ddb-92a9-a933bd3c64fa" absoluteBounds="1.7650000000000001, 1.3511718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </interfaceShape>
-    <classShape Id="8a354e17-9c14-44f7-b0f9-6af3cc23ff2e" absoluteBounds="0.5, 2.125, 1.75, 1.0624999801317849" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="8a354e17-9c14-44f7-b0f9-6af3cc23ff2e" absoluteBounds="0.5, 2.125, 1.75, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="3dbea66b-6d99-4fa6-ae65-f6bdb2199e8e" LastKnownName="MelodyBubble" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="e3886545-2153-476d-8ab5-28cf77429973" absoluteBounds="0.515, 2.515, 1.7200000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="7eb4ef85-25a1-41c8-8554-955e78cffa7c" absoluteBounds="0.515, 2.8863281125823654, 1.7200000000000002, 0.20117186754941951" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="e3886545-2153-476d-8ab5-28cf77429973" absoluteBounds="0.515, 2.515, 1.7200000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="7eb4ef85-25a1-41c8-8554-955e78cffa7c" absoluteBounds="0.515, 3.046484357615312, 1.7200000000000002, 0.20117186754941951" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <realizationConnector edgePoints="[(1.375 : 2.125); (1.375 : 1.95234373509884); (2.5 : 1.95234373509884); (2.5 : 1.65234373509884)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
@@ -24,11 +24,11 @@
         <interfaceShapeMoniker Id="ca2aff36-163b-4e67-86db-63f502049ab6" />
       </nodes>
     </realizationConnector>
-    <classShape Id="c89c983f-8f08-4a4e-bfdc-48b6117b5aa2" absoluteBounds="2.75, 2.125, 1.5, 1.0624999801317849" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="c89c983f-8f08-4a4e-bfdc-48b6117b5aa2" absoluteBounds="2.75, 2.125, 1.5, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="150c2154-c9d9-4ef2-bd9f-e1c4689234a3" LastKnownName="NoteBubble" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="bf9b53cb-52e3-4729-9169-3c6099192b78" absoluteBounds="2.765, 2.515, 1.4700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="bdabe290-1add-4ee0-a80e-949745b2dbdf" absoluteBounds="2.765, 2.8863281125823654, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="bf9b53cb-52e3-4729-9169-3c6099192b78" absoluteBounds="2.765, 2.515, 1.4700000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="bdabe290-1add-4ee0-a80e-949745b2dbdf" absoluteBounds="2.765, 3.046484357615312, 1.4700000000000002, 0.20117186754941951" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <realizationConnector edgePoints="[(3.5 : 2.125); (3.5 : 1.95234373509884); (2.5 : 1.95234373509884); (2.5 : 1.65234373509884)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
