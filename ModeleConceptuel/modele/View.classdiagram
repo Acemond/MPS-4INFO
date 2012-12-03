@@ -67,6 +67,16 @@
         <elementDefinition Id="61c94878-b220-4708-8c2c-70c2192d8bff" />
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b6cbecb8-d3bd-4945-b42a-10a6462fec1e" name="PlayButtonV" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7dd22ddf-2591-4980-9b60-37dc316d46d2" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fc22652b-8b1c-4771-b57d-cc768294c675" name="SurfaceWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f24f7f9d-8b5f-42d8-9c68-62c16b6457d5" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="6ceabff9-1a2b-4c9a-be51-a6c120c3730f" name="modele">
     <elementDefinition Id="071e5591-5d99-4099-80a0-fe8c8f2ff67e" />

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Controller">
+  <logicalClassDesignerModelMoniker Id="6ceef73f-93c3-4ac0-8fbb-053d1767c010" />
+  <nestedChildShapes>
+    <classShape Id="99927975-b011-4413-a09c-77279075ca0d" absoluteBounds="3.375, 2.5, 1.5, 1.7031249602635707" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="feadef9c-9fd8-4c08-96b4-ba0426884995" LastKnownName="AudioController" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="24113fe1-7bec-4ebd-836a-237b4d6af52e" absoluteBounds="3.39, 2.8899999999999997, 1.4700000000000002, 0.68164060264825832" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="e72d1130-e6f3-48ab-9573-242e7a7cd920" absoluteBounds="3.39, 3.5816406026482586, 1.4700000000000002, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="50d11dfe-3296-4f76-aad2-da5f89d33e0d" absoluteBounds="0.5, 0.75, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="8eac881e-9b4a-4051-adcd-436e93213c8b" LastKnownName="PlayButtonVM" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="ee3dfc4b-35a0-411f-9753-409fbe933483" absoluteBounds="0.51500000000000012, 1.1400000000000001, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="0046e7ef-1cbe-4c19-aca2-ceb709cb2356" absoluteBounds="0.51500000000000012, 1.3511718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
