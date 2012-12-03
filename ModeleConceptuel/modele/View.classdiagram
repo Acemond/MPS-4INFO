@@ -57,6 +57,16 @@
         <elementDefinition Id="cd0debf2-974b-49cf-9562-ae6a7f5e1fbb" />
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7f81ca07-7d45-46be-8dfa-837fa91d959d" name="TreeView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="94b0729c-2943-4826-b304-1323443f548f" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4ebb7d4f-5f97-4c50-94a8-93580c29dbc4" name="ThemeView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="61c94878-b220-4708-8c2c-70c2192d8bff" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="6ceabff9-1a2b-4c9a-be51-a6c120c3730f" name="modele">
     <elementDefinition Id="071e5591-5d99-4099-80a0-fe8c8f2ff67e" />
