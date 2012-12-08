@@ -7,6 +7,7 @@ namespace popntouch.Model
 {
     public enum PitchClass : int
     {
+        None,
         A1,
         B1,
         C1,
