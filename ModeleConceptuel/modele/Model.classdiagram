@@ -1,271 +1,973 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="9a1b6f27-c0da-4646-b53e-504053a16bac" name="Model" linkedPackageId="29d9b4e7-84d6-46cc-adc2-1b06be57f92e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
-    <logicalClassDesignerModelHasTypes>
-      <Interface Id="dc0ba1f8-2fab-46db-a929-ccc37969ae09" name="IBubble" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="7da4f92f-5be0-4ed9-a7b2-a53b37e805ab" />
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="3dbea66b-6d99-4fa6-ae65-f6bdb2199e8e" name="MelodyBubble" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="5e4e59d2-cc81-4e5a-81a3-11ab150373e7" />
-        <suppliersInternal>
-          <interfaceRealization Id="4888040b-f00f-4d49-977f-540dd7aa2902">
-            <interfaceMoniker Id="dc0ba1f8-2fab-46db-a929-ccc37969ae09" LastKnownName="IBubble" />
-            <elementDefinition Id="5c166abd-9fff-486b-a02f-773196c4dd5c" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <ownedAttributesInternal>
-          <property Id="fbe824d0-fd78-42b6-854d-708fba61ad50" name="_melody" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="945428b0-22a4-46ad-a807-e40a870eff23" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="89849468-d532-4482-80fc-874e78cce5f9" LastKnownName="Melody" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="150c2154-c9d9-4ef2-bd9f-e1c4689234a3" name="NoteBubble" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="14f256a1-1fcb-4b91-93aa-7713e94e832f" />
-        <suppliersInternal>
-          <interfaceRealization Id="f23fa30a-4a53-410b-b80b-30e033c59e28">
-            <interfaceMoniker Id="dc0ba1f8-2fab-46db-a929-ccc37969ae09" LastKnownName="IBubble" />
-            <elementDefinition Id="4d76be50-c138-43f7-9c5b-779bce26bf71" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <ownedAttributesInternal>
-          <property Id="465e6802-30d0-4a3d-a0a4-1ad1bb5459c5" name="_note" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="84cc2c41-50f2-4a31-a631-080af5ad07dc" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="aea95e52-3796-4c38-b4a9-85c1adcd2397" LastKnownName="Note" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" name="Note" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573" />
-        <ownedAttributesInternal>
-          <property Id="7aeeae78-0b84-444a-a618-00f1cb588bac" name="_pitch" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="155cb299-cca6-4b28-a523-e05fcd7669bb" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="11a6f3ac-3db6-4c2e-81c6-8306792b62a9" LastKnownName="PitchClasses" />
-            </type_NamedElement>
-          </property>
-          <property Id="0b183edf-c8e6-4723-ba00-050537633ff0" name="_duration" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f1a2d1d9-2901-4241-9670-f9abc7b102e1" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="3c0f709c-a297-451f-a0b4-13efe13db403" LastKnownName="Integer" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <enumeration Id="5105624f-8051-4b00-b158-ff9f20ba4d34" name="PitchClasses" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="720c7c34-b714-4a6b-babf-b611697458d9" />
-        <ownedLiterals>
-          <enumerationLiteral Id="6ee7178e-5902-40fc-8cb1-86ac2a38d1e9" name="A">
-            <elementDefinition Id="cfb79104-8c4e-402b-930a-52c32f0d3dac" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="a6951347-4c73-4929-ae24-312a2bc49238" name="B">
-            <elementDefinition Id="79bb6563-3a0d-4f80-89e1-a2a3a2be6781" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="29fe3bc1-4a80-409f-8ad6-dc7982a29736" name="C">
-            <elementDefinition Id="1361b66c-ef98-4cd4-8d9e-d54477bd2169" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="375dc188-0ea2-407b-84b3-2f54a9f8e8da" name="E">
-            <elementDefinition Id="5137b408-1384-46a5-8aad-a3cd0c312490" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="94d8ac95-fbd0-42c1-8ad1-c447bb650c8c" name="D">
-            <elementDefinition Id="749f09c1-9548-41d2-8b6a-347db50d2e7c" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="7cdac348-b0ae-4a3b-b41e-e837180ac077" name="F">
-            <elementDefinition Id="5eac542a-68b5-474d-9bd0-ee7d42251e2f" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="3107501e-527d-4c13-96fc-5ee3ad533f85" name="G">
-            <elementDefinition Id="dc8ddfc2-3633-4f63-8f3c-75e4fd06ddce" />
-          </enumerationLiteral>
-        </ownedLiterals>
-      </enumeration>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="b47cb2b0-a49b-4f3e-9fbb-ee436db61b53" name="Instrument" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="98441cfc-2e69-408d-b783-50af7e4d3b62" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="6b22a899-5bb8-4c6b-afdc-03eb8ea46047" name="Melody" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="e25e7953-1f4f-4a5b-8034-7cfb77e9e573" />
-        <ownedAttributesInternal>
-          <property Id="4f598bd0-f7fc-475f-986b-15d61ae02797" name="_notes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="11f22b0e-744b-4963-83da-bb9163c0b422" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="b81600ad-2b8b-4549-8734-ecf756c4413d" LastKnownName="List&lt;Note&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="9a4fcf64-6a63-4183-b1ab-e170e90319de" name="_symbol" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="ae0c1f35-db26-4472-a097-35102736da0e" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="4a6b90bb-fc94-468c-829d-bac9d487f3fd" LastKnownName="Gestures" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="250ba5a5-5174-4495-95f9-6ba264d1dc4a" name="MelodyFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="cf9890e3-fc48-459c-82a2-3ffe49cc72cc" />
-        <ownedAttributesInternal>
-          <property Id="52250641-c06c-495e-9300-e125be9c0f8a" name="_melodies" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="15b0c8b5-e0d2-4bbd-acef-e88650581e88" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="409b324f-5e47-40dd-b265-cd2fb2c3a5d6" LastKnownName="Dictionnary&lt;Gestures, List&lt;Note&gt;&gt;" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="c2d23c99-b4ee-478f-a914-8b834417d27e" name="createMelody" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="56068e4a-3160-48f0-810f-54f25bcb5534" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="f6f655f1-792b-42c3-84f7-6bb199dec4d8" name="Gestures" direction="In" isUnique="false">
-                  <elementDefinition Id="3efd2c02-f38c-42aa-acc1-f830381022c0" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <enumeration Id="5647b3cd-a9c1-45a6-bcab-231994c842f5" name="Gestures" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="63982947-9e12-4045-9179-e019023f91c4" />
-        <ownedLiterals>
-          <enumerationLiteral Id="070771cd-fcae-48e1-b558-9d81adf1372d" name="Wave">
-            <elementDefinition Id="91941267-ada8-4db8-8c9b-aa88d155acaa" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="e31a1b1a-e4a9-42c1-8e30-fdefcc8c2726" name="Square">
-            <elementDefinition Id="04626dee-d15c-4283-a891-b81574b8920e" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="2831f824-10a5-4f4a-9fbf-1e48a345ede0" name="Infinite">
-            <elementDefinition Id="6270ce5b-508d-4a5b-bcec-78020c22eb48" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="f0da38ab-b0ca-4bcb-940e-b79b794e4c75" name="Corner">
-            <elementDefinition Id="9a7ee73a-a575-4bd1-a5f1-a82aa6b67ef9" />
-          </enumerationLiteral>
-        </ownedLiterals>
-      </enumeration>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="248d183f-456f-46e4-8024-6ce71e67252b" name="NoteFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="d0e5647b-c65b-428d-87aa-f066e1bf4437" />
-        <ownedAttributesInternal>
-          <property Id="788cb464-b0ba-4178-8a6c-ea5fb26d6684" name="_notes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="cd6fa074-ed46-42cc-9c43-40a6344ee224" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="7ce3bce7-f132-48af-8da3-9dfa6c07f2e6" LastKnownName="Dictionnary&lt;NoteValues, Integer&gt;" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="93d56003-4c81-40a6-9c58-f896753a3c77" name="createNote" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="bfbfa6a6-71c3-44a8-b95a-d2238d23dbaf" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="56c86a82-a1e6-4019-9ec6-a8ea94aa9a7d" name="NoteValue" direction="In" isUnique="false">
-                  <elementDefinition Id="a976383e-e4bc-4b3b-ac83-7b9e633dc9c5" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="c93c1694-0b5b-4f17-a50b-f1c6f312a2ae" name="PitchClasses" direction="In" isUnique="false">
-                  <elementDefinition Id="3ac3476b-a1e2-497d-92b1-e4a4bd6b8c08" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
       <referencedType Id="ee78db32-40f8-408d-ae01-4737c9fe938e" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
       </referencedType>
     </packageHasNamedElement>
-    <logicalClassDesignerModelHasTypes>
-      <enumeration Id="bd2a13c4-d387-4928-bf8a-febc22cfae48" name="NoteValues" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="b4cdf9f0-b277-4b93-9aa5-12626348b143" />
-        <ownedLiterals>
-          <enumerationLiteral Id="3de04eeb-c6d5-48b6-92bc-711a1616d6e4" name="HalfNote">
-            <elementDefinition Id="20daac05-6c4b-4235-a1f8-048fa40e8ba0" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="2b95f556-7711-46a3-9514-9a8f85d1213b" name="QuarterNote">
-            <elementDefinition Id="d8465d08-7551-4211-aec8-bf5aac4f0eee" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="96683812-7175-4163-a806-432dcad37e4f" name="EightNote">
-            <elementDefinition Id="65bcc360-f5da-4e74-8f04-b595803377ff" />
-          </enumerationLiteral>
-          <enumerationLiteral Id="73c95b95-0287-4e97-9ee0-863c691e10fc" name="Silence">
-            <elementDefinition Id="ec5b57ae-1564-4ce4-9770-d4a0197a012c" />
-          </enumerationLiteral>
-        </ownedLiterals>
-      </enumeration>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="cc9fffcc-55a8-4b07-a6ad-6d1f516ccb9b" name="Stave" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="2af0b63d-bf6c-4655-8183-e7bb11c5bd74" />
-        <ownedAttributesInternal>
-          <property Id="cbdb7977-d339-476d-ac7e-6907afe40e0d" name="_maxnote" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="10eca3ed-9983-4137-9b4e-761c8f735f76" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="89849468-d532-4482-80fc-874e78cce5f9" name="Melody" isAbstract="false" isLeaf="false" cachedFullName="modele::Melody">
-        <elementDefinition Id="e25e7953-1f4f-4a5b-8034-7cfb77e9e573" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="aea95e52-3796-4c38-b4a9-85c1adcd2397" name="Note" isAbstract="false" isLeaf="false" cachedFullName="modele::Note">
-        <elementDefinition Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="3c0f709c-a297-451f-a0b4-13efe13db403" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="11a6f3ac-3db6-4c2e-81c6-8306792b62a9" name="PitchClasses" isAbstract="false" isLeaf="false" cachedFullName="modele::PitchClasses">
+      <referencedType Id="11a6f3ac-3db6-4c2e-81c6-8306792b62a9" name="PitchClass" isAbstract="false" isLeaf="false" cachedFullName="modele::Package2::Enums::PitchClass">
         <elementDefinition Id="720c7c34-b714-4a6b-babf-b611697458d9" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="7ce3bce7-f132-48af-8da3-9dfa6c07f2e6" name="Dictionnary&lt;NoteValues, Integer&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionnary&lt;NoteValues, Integer&gt;">
-        <elementDefinition Id="4b77a1e4-ab97-4a7f-9ed6-81031680485d" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="b81600ad-2b8b-4549-8734-ecf756c4413d" name="List&lt;Note&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Note&gt;">
-        <elementDefinition Id="01db7ba1-242f-42df-9139-e74bbeddd191" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="4a6b90bb-fc94-468c-829d-bac9d487f3fd" name="Gestures" isAbstract="false" isLeaf="false" cachedFullName="modele::Gestures">
+      <referencedType Id="4a6b90bb-fc94-468c-829d-bac9d487f3fd" name="Gesture" isAbstract="false" isLeaf="false" cachedFullName="modele::Package2::Enums::Gesture">
         <elementDefinition Id="63982947-9e12-4045-9179-e019023f91c4" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="409b324f-5e47-40dd-b265-cd2fb2c3a5d6" name="Dictionnary&lt;Gestures, List&lt;Note&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionnary&lt;Gestures, List&lt;Note&gt;&gt;">
-        <elementDefinition Id="2fa16767-2922-461b-9e91-350cc85dc7b4" />
+      <referencedType Id="cbb850fb-d0c0-447f-a77b-c471461e88c1" name="MelodyBubble" isAbstract="false" isLeaf="false" cachedFullName="modele::Package2::MelodyBubble">
+        <elementDefinition Id="5e4e59d2-cc81-4e5a-81a3-11ab150373e7" />
       </referencedType>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="73af3396-34b4-46d7-bd8d-7dc90d734448" name="NoteBubble" isAbstract="false" isLeaf="false" cachedFullName="modele::Package2::NoteBubble">
+        <elementDefinition Id="14f256a1-1fcb-4b91-93aa-7713e94e832f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2d476c04-fb88-404c-bbcf-d7e2a3ed27f5" name="Note" isAbstract="false" isLeaf="false" cachedFullName="modele::Package2::Note">
+        <elementDefinition Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="01e1d8a9-e0d6-4d96-a20b-d87ec2a6de36" name="InstrumentType" isAbstract="false" isLeaf="false" cachedFullName="modele::Package2::Enums::InstrumentType">
+        <elementDefinition Id="60204fb2-5d49-40a7-8d00-747d79a00e23" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6008e687-1d7a-4627-b255-01871e2e56ce" name="Dictionnary&lt;PitchClass, String&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionnary&lt;PitchClass, String&gt;">
+        <elementDefinition Id="555c2845-4b56-4ec0-94fd-06ec6c908301" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bb6018fd-eebf-43b6-814a-e5421625d8e3" name="NoteValue" isAbstract="false" isLeaf="false" cachedFullName="NoteValue">
+        <elementDefinition Id="742aec7f-3374-4b04-9ffa-1331daa2f5cb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="00c8fda2-772e-4e1e-9d0f-0dc8f954b275" name="Dictionnary&lt;Gesture, List&lt;Note&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionnary&lt;Gesture, List&lt;Note&gt;&gt;">
+        <elementDefinition Id="fe8e759b-e5ab-478d-8027-d07e57f0985c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1acad058-2d97-4777-a1ed-dc268b6cacca" name="Dictionnary&lt;NoteValue, Integer&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionnary&lt;NoteValue, Integer&gt;">
+        <elementDefinition Id="6ea39e55-d2e4-4b07-8135-c6353a07aa5c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="50b1b673-8c2b-4762-ae88-78c7dfa5e02d" name="NoteValue" isAbstract="false" isLeaf="false" cachedFullName="modele::Package2::Enums::NoteValue">
+        <elementDefinition Id="b4cdf9f0-b277-4b93-9aa5-12626348b143" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dc691597-17db-45ef-8b6b-c7c101293750" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b2af2d39-4f23-46a3-b5cc-16ddc9fe1540" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="141b9b36-e568-43c2-83e1-cfc21b3e5c41" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6544cf88-ccdb-42ea-90e1-c84f5182c384" name="List&lt;Instrument&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Instrument&gt;">
+        <elementDefinition Id="afc5eb51-c32c-41b2-b9e0-d6fe31c5b0b1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="74231dd2-388a-4c29-b69d-9affd30627e4" name="AudioEngine" isAbstract="false" isLeaf="false" cachedFullName="AudioEngine">
+        <elementDefinition Id="2d9f1bc4-c6cd-450b-80e5-d9b38a028e35" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4de79cba-8f01-4e3f-a09c-af347a2e868f" name="WaveBank" isAbstract="false" isLeaf="false" cachedFullName="WaveBank">
+        <elementDefinition Id="c38e6eab-2a1b-46ee-992f-ff64dc127649" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6bb878d6-f843-4ee8-8931-704edabc482c" name="SoundBank" isAbstract="false" isLeaf="false" cachedFullName="SoundBank">
+        <elementDefinition Id="28fa6156-d0c5-4294-b280-15b89e7dafa0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b2528ef9-5f08-423f-9dea-cf8cf6adb362" name="AudioController" isAbstract="false" isLeaf="false" cachedFullName="modele::AudioController">
+        <elementDefinition Id="96c56727-0315-4009-821a-b8a7caa601e7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="27d1d5cb-3d7b-4d91-9f2f-e2c0ecffc019" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ece17081-4fc7-4065-9390-1e58a104d1c7" name="Model">
+        <ownedCommentsInternal>
+          <comment Id="cdefaf95-5b7d-4f36-85c9-0036f75a675f">
+            <elementDefinition Id="1921e2bc-0a6e-437d-b0bd-681ed95391ef" />
+            <body>Singleton</body>
+            <annotatedElements>
+              <classMoniker Id="2b1b9b5e-7996-4ad5-a879-2bc605e27a13" LastKnownName="AudioController" />
+            </annotatedElements>
+          </comment>
+          <comment Id="fc617646-6d7b-41cc-a549-dd3cf6e73fa1">
+            <elementDefinition Id="7f681311-2394-45dd-964d-1db951df6ff7" />
+            <body>Flyweight</body>
+            <annotatedElements>
+              <classMoniker Id="248d183f-456f-46e4-8024-6ce71e67252b" LastKnownName="NoteFactory" />
+            </annotatedElements>
+          </comment>
+          <comment Id="21c1c68f-58d3-492d-b6ab-0bae4ef466f7">
+            <elementDefinition Id="122988cd-cbd9-4513-9cd1-9a1aadef4597" />
+            <body>Flyweight</body>
+            <annotatedElements>
+              <classMoniker Id="250ba5a5-5174-4495-95f9-6ba264d1dc4a" LastKnownName="MelodyFactory" />
+            </annotatedElements>
+          </comment>
+          <comment Id="86b10942-bd8b-4fc0-bed4-5e284b791477">
+            <elementDefinition Id="b137b685-5814-4a13-bf90-b00a82b53bab" />
+            <body>Factory
+</body>
+            <annotatedElements>
+              <classMoniker Id="250ba5a5-5174-4495-95f9-6ba264d1dc4a" LastKnownName="MelodyFactory" />
+              <classMoniker Id="6b22a899-5bb8-4c6b-afdc-03eb8ea46047" LastKnownName="Melody" />
+            </annotatedElements>
+          </comment>
+          <comment Id="af67d0da-802d-43ff-a3a8-83dc18ba1250">
+            <elementDefinition Id="ff9d189e-16c7-4244-8760-925a87316145" />
+            <body>Factory</body>
+            <annotatedElements>
+              <classMoniker Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" LastKnownName="Note" />
+              <classMoniker Id="248d183f-456f-46e4-8024-6ce71e67252b" LastKnownName="NoteFactory" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="6c991e0b-5c14-47b0-93d5-2d4568f0db39" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <package Id="f5e58768-6ee7-485e-82cd-30761eeddec8" name="Enums">
+              <elementDefinition Id="0cd57ed8-3e04-4172-b3bf-7d2cb03564e7" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <enumeration Id="5105624f-8051-4b00-b158-ff9f20ba4d34" name="PitchClass" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="720c7c34-b714-4a6b-babf-b611697458d9" />
+                    <ownedLiterals>
+                      <enumerationLiteral Id="6ee7178e-5902-40fc-8cb1-86ac2a38d1e9" name="A">
+                        <elementDefinition Id="cfb79104-8c4e-402b-930a-52c32f0d3dac" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="a6951347-4c73-4929-ae24-312a2bc49238" name="B">
+                        <elementDefinition Id="79bb6563-3a0d-4f80-89e1-a2a3a2be6781" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="29fe3bc1-4a80-409f-8ad6-dc7982a29736" name="C">
+                        <elementDefinition Id="1361b66c-ef98-4cd4-8d9e-d54477bd2169" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="375dc188-0ea2-407b-84b3-2f54a9f8e8da" name="E">
+                        <elementDefinition Id="5137b408-1384-46a5-8aad-a3cd0c312490" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="94d8ac95-fbd0-42c1-8ad1-c447bb650c8c" name="D">
+                        <elementDefinition Id="749f09c1-9548-41d2-8b6a-347db50d2e7c" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="7cdac348-b0ae-4a3b-b41e-e837180ac077" name="F">
+                        <elementDefinition Id="5eac542a-68b5-474d-9bd0-ee7d42251e2f" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="3107501e-527d-4c13-96fc-5ee3ad533f85" name="G">
+                        <elementDefinition Id="dc8ddfc2-3633-4f63-8f3c-75e4fd06ddce" />
+                      </enumerationLiteral>
+                    </ownedLiterals>
+                  </enumeration>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <enumeration Id="c36e12a6-bc19-4e28-af3d-ccba564e2fdc" name="InstrumentType" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="60204fb2-5d49-40a7-8d00-747d79a00e23" />
+                    <ownedLiterals>
+                      <enumerationLiteral Id="ce412225-aef1-4dd9-ac38-cd25a05f0556" name="Piano">
+                        <elementDefinition Id="de8cfc7c-297d-4fc7-b212-7f5e2462d6cb" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="9de6c9a4-02c2-4d51-a623-4865bab8fd73" name="Flute">
+                        <elementDefinition Id="337ae89d-c806-4047-b8c4-94ac245bc5d9" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="ca6d079e-1a51-421e-af27-6f492a228604" name="Bass">
+                        <elementDefinition Id="59244b45-6cf8-47ee-ae85-c4e9fea6982c" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="0ee350c6-6d62-4c0d-9fd4-8e2fe6aedb2c" name="Clarinet">
+                        <elementDefinition Id="8f8bd44e-7c9d-49c6-89ba-d5f06b77fd32" />
+                      </enumerationLiteral>
+                    </ownedLiterals>
+                  </enumeration>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <enumeration Id="5647b3cd-a9c1-45a6-bcab-231994c842f5" name="Gesture" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="63982947-9e12-4045-9179-e019023f91c4" />
+                    <ownedLiterals>
+                      <enumerationLiteral Id="070771cd-fcae-48e1-b558-9d81adf1372d" name="Wave">
+                        <elementDefinition Id="91941267-ada8-4db8-8c9b-aa88d155acaa" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="e31a1b1a-e4a9-42c1-8e30-fdefcc8c2726" name="Square">
+                        <elementDefinition Id="04626dee-d15c-4283-a891-b81574b8920e" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="2831f824-10a5-4f4a-9fbf-1e48a345ede0" name="Infinite">
+                        <elementDefinition Id="6270ce5b-508d-4a5b-bcec-78020c22eb48" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="f0da38ab-b0ca-4bcb-940e-b79b794e4c75" name="Corner">
+                        <elementDefinition Id="9a7ee73a-a575-4bd1-a5f1-a82aa6b67ef9" />
+                      </enumerationLiteral>
+                    </ownedLiterals>
+                  </enumeration>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <enumeration Id="bd2a13c4-d387-4928-bf8a-febc22cfae48" name="NoteValue" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="b4cdf9f0-b277-4b93-9aa5-12626348b143" />
+                    <ownedLiterals>
+                      <enumerationLiteral Id="3de04eeb-c6d5-48b6-92bc-711a1616d6e4" name="HalfNote">
+                        <elementDefinition Id="20daac05-6c4b-4235-a1f8-048fa40e8ba0" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="2b95f556-7711-46a3-9514-9a8f85d1213b" name="QuarterNote">
+                        <elementDefinition Id="d8465d08-7551-4211-aec8-bf5aac4f0eee" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="96683812-7175-4163-a806-432dcad37e4f" name="EightNote">
+                        <elementDefinition Id="65bcc360-f5da-4e74-8f04-b595803377ff" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="73c95b95-0287-4e97-9ee0-863c691e10fc" name="Silence">
+                        <elementDefinition Id="ec5b57ae-1564-4ce4-9770-d4a0197a012c" />
+                      </enumerationLiteral>
+                    </ownedLiterals>
+                  </enumeration>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1bbfe363-6f71-40d6-b049-cf2a8e91ba7c" name="MelodyBubbleGenerator" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e6d73bda-a9a3-4b5d-b019-e0472f66c7b6" />
+              <targetEnds>
+                <association Id="9cd41062-eb0f-49f1-a0e9-06b6fb2602ba" isDerived="false" sourceEndRoleName="" targetEndRoleName="_melodyBubbles" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="3dbea66b-6d99-4fa6-ae65-f6bdb2199e8e" LastKnownName="MelodyBubble" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="df327cb0-16c9-428e-b6c2-5ef878811473" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="2256f7bb-549b-4bb4-be31-a8eee28e47ed" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="478e904e-c977-4252-a137-753817aba2ab" name="_melodyBubbles" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <lowerValueInternal>
+                          <literalString Id="5e097365-5d69-4e2e-8d0c-9dd6b75d6aba" name="Lower" value="*">
+                            <elementDefinition Id="c3258223-4afc-447e-9c07-65bbe535855f" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="bc83b2ea-cfa7-469d-b174-4350c884b03b" name="Upper" value="*">
+                            <elementDefinition Id="1564cec3-3871-4aea-bed5-054b9d40309a" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="9032d054-fdb3-469b-9776-ae8064c71917" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="4b7e70b9-9c5b-431c-a27a-828c4bb0022e" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="1d97b997-1acd-4607-8db2-59fc9fbba50f" name="createMelodyBubble" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7d9e1912-39b1-4ca8-bb04-0f0191e4fead" />
+                </operation>
+                <operation Id="773dac05-b2ac-4f2d-9519-22a5cab92452" name="removeFromGenerator" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c272e07f-7343-43dd-bf33-1eb596ef14f9" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="cb40c68a-551a-4728-a86c-502a06a99134" name="b" direction="In" isUnique="false">
+                        <elementDefinition Id="cee8edd1-52bd-4188-bff1-6d1c394ac9e3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="cbb850fb-d0c0-447f-a77b-c471461e88c1" LastKnownName="MelodyBubble" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3dbea66b-6d99-4fa6-ae65-f6bdb2199e8e" name="MelodyBubble" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5e4e59d2-cc81-4e5a-81a3-11ab150373e7" />
+              <targetEnds>
+                <association Id="a7bb174e-cd0d-4110-93d7-d6667dfb628e" isDerived="false" sourceEndRoleName="" targetEndRoleName="_melody" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="6b22a899-5bb8-4c6b-afdc-03eb8ea46047" LastKnownName="Melody" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="6a5d0df4-599b-4488-9280-c34610913818" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="9ef4cdf0-e9fc-459e-8ada-39cbc7761b8d" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="18042949-8329-40a2-b5b8-fa0e1072f773" name="_melody" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <elementDefinition Id="90513e34-d0f1-40c1-b1f9-3a65ad2add00" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="38fede38-174f-46db-af0b-4920d509005f" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="07aae224-438d-4a98-909d-3c790bc098cb" name="_id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="791f3595-0542-4995-827d-00b31ca9c002" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="150c2154-c9d9-4ef2-bd9f-e1c4689234a3" name="NoteBubble" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="14f256a1-1fcb-4b91-93aa-7713e94e832f" />
+              <targetEnds>
+                <association Id="4f90d6e0-16ed-426c-8a58-0f90b0138c0a" isDerived="false" sourceEndRoleName="" targetEndRoleName="_note" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" LastKnownName="Note" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="7a29d4db-56b1-490c-849c-5f7886c27e8b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="84e8eaa8-ab05-4a3d-8493-037d7e108311" name="Lower" value="1">
+                            <elementDefinition Id="4ff74fb3-0c6b-4445-9608-62e34fa40fb2" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="0fea0ad1-3947-462e-9e80-a73c2ea955af" name="Upper" value="1">
+                            <elementDefinition Id="92e213fc-014d-4541-8331-47d5ec31f217" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="160ffcfd-f3ad-49d1-9547-495729e0727b" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="87001f16-7d1d-4012-85fa-06dcd2cef77d" name="_note" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <elementDefinition Id="f88bf25b-fa83-4adc-9c5d-a0167dc1ea80" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="28a1fd7f-83b0-4bcd-a9f1-90bb0c57584c" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="dd8bafe9-e685-4d4a-b888-c8b929e2fbef" name="_id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="710371f0-37f6-4fa8-bf10-a3e58b121bd3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6b22a899-5bb8-4c6b-afdc-03eb8ea46047" name="Melody" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e25e7953-1f4f-4a5b-8034-7cfb77e9e573" />
+              <targetEnds>
+                <association Id="c520ed4b-1373-461c-ab2f-2128b8d33ee6" isDerived="false" sourceEndRoleName="" targetEndRoleName="_notes" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" LastKnownName="Note" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d2e4aff1-0ed1-40ed-a3a7-f43153fa391c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="5fc42224-752c-4c6d-b432-d5e29e1cabee" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="6a0f9b93-6bc5-4190-8f13-b715585af36a" name="_notes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <lowerValueInternal>
+                          <literalString Id="6cbe30fd-1b13-43d6-a750-8210c39747c1" name="Lower" value="*">
+                            <elementDefinition Id="bc861f72-c470-4434-9942-51ff99db35d9" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="fc2f6c81-224b-43ae-a85b-f6deb75f3306" name="Upper" value="*">
+                            <elementDefinition Id="c008a7b4-32e0-4223-9081-b2385328e5f0" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="67597109-b4a6-417f-93e5-be6720dd8425" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="d2dcc90e-56e3-4b0f-921c-afe3664ffceb" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="9a4fcf64-6a63-4183-b1ab-e170e90319de" name="_symbol" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ae0c1f35-db26-4472-a097-35102736da0e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a6b90bb-fc94-468c-829d-bac9d487f3fd" LastKnownName="Gesture" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="250ba5a5-5174-4495-95f9-6ba264d1dc4a" name="MelodyFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="cf9890e3-fc48-459c-82a2-3ffe49cc72cc" />
+              <ownedAttributesInternal>
+                <property Id="52250641-c06c-495e-9300-e125be9c0f8a" name="_melodies" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="15b0c8b5-e0d2-4bbd-acef-e88650581e88" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="00c8fda2-772e-4e1e-9d0f-0dc8f954b275" LastKnownName="Dictionnary&lt;Gesture, List&lt;Note&gt;&gt;" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="c2d23c99-b4ee-478f-a914-8b834417d27e" name="createMelody" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="56068e4a-3160-48f0-810f-54f25bcb5534" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f6f655f1-792b-42c3-84f7-6bb199dec4d8" name="Gestures" direction="In" isUnique="false">
+                        <elementDefinition Id="3efd2c02-f38c-42aa-acc1-f830381022c0" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" name="Note" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6c68e50f-4d5e-465a-ace9-aa7ec2d03573" />
+              <ownedAttributesInternal>
+                <property Id="7aeeae78-0b84-444a-a618-00f1cb588bac" name="_pitch" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="155cb299-cca6-4b28-a523-e05fcd7669bb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="11a6f3ac-3db6-4c2e-81c6-8306792b62a9" LastKnownName="PitchClass" />
+                  </type_NamedElement>
+                </property>
+                <property Id="0b183edf-c8e6-4723-ba00-050537633ff0" name="_duration" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f1a2d1d9-2901-4241-9670-f9abc7b102e1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bb6018fd-eebf-43b6-814a-e5421625d8e3" LastKnownName="NoteValue" />
+                  </type_NamedElement>
+                </property>
+                <property Id="5b705b0c-1662-49e4-8f66-becd8b3187c4" name="_ octave" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="57c762fd-bef7-4851-aa49-425230d6ee35" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="248d183f-456f-46e4-8024-6ce71e67252b" name="NoteFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d0e5647b-c65b-428d-87aa-f066e1bf4437" />
+              <ownedAttributesInternal>
+                <property Id="788cb464-b0ba-4178-8a6c-ea5fb26d6684" name="_notes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cd6fa074-ed46-42cc-9c43-40a6344ee224" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1acad058-2d97-4777-a1ed-dc268b6cacca" LastKnownName="Dictionnary&lt;NoteValue, Integer&gt;" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="93d56003-4c81-40a6-9c58-f896753a3c77" name="createNote" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bfbfa6a6-71c3-44a8-b95a-d2238d23dbaf" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3fd17431-777a-491a-97f2-7b231cdc2723" name="n" direction="In" isUnique="false">
+                        <elementDefinition Id="ee49bf16-c6d1-4fe1-9fa3-765e794434bd" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="50b1b673-8c2b-4762-ae88-78c7dfa5e02d" LastKnownName="NoteValue" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9179af06-10b8-4185-ab56-3c2eb7de1992" name="p" direction="In" isUnique="false">
+                        <elementDefinition Id="c1b04e56-6b8b-464f-8810-cf40867dccd5" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="11a6f3ac-3db6-4c2e-81c6-8306792b62a9" LastKnownName="PitchClass" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="c78c9faf-40db-45f3-ac5a-9fce17fdb723" name="Stave" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <appliedStereotypesInternal>
+                <stereotypeInstance Id="6c96fd8c-a353-483a-a678-06fe21a7aa90" name="class" profile="CSharpProfile">
+                  <elementDefinition Id="aee8b01b-318f-41ca-ad59-62b660457465" />
+                  <propertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="01ade47a-e2e3-4ddb-8e13-28e7616b91e4">
+                      <propertyInstance Id="28d6f4fa-5272-4d75-b348-e653cd295966" name="ClrAttributes">
+                        <elementDefinition Id="dfd3a0a5-0bd0-446f-8637-cbbb9c890d44" />
+                      </propertyInstance>
+                      <elementDefinition Id="adc7ce4c-04fe-42b3-84a1-84a0c65106d5" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="fb53ffd5-9488-4570-af09-8b9c0b9d8106">
+                      <propertyInstance Id="4a2ecb59-9877-4929-8a1a-98ca390cebee" name="IsPartial" value="false">
+                        <elementDefinition Id="11d2c618-7044-488c-9176-5c514fe4a838" />
+                      </propertyInstance>
+                      <elementDefinition Id="c9dcf9c9-5755-4ce4-8f59-7fa4d961df72" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="d9809822-1b3a-47fa-b384-a97e5394b0f1">
+                      <propertyInstance Id="a5a5e7a8-b928-4189-9c8c-0dc7ca2c7b64" name="IsStatic" value="false">
+                        <elementDefinition Id="ad09947a-27fa-40ea-b5e0-f49e4bedd834" />
+                      </propertyInstance>
+                      <elementDefinition Id="98ec3931-83f2-436b-834f-3e300b93eeeb" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="ef89c1c8-cb86-4ad0-847d-c48ede33da49">
+                      <propertyInstance Id="0dd60e8c-e978-49c0-aec6-c74b8a61f6e9" name="IsUnsafe" value="false">
+                        <elementDefinition Id="02068e37-ab4c-44fd-806a-7677197146de" />
+                      </propertyInstance>
+                      <elementDefinition Id="5f5498d4-d4bd-4948-89db-eb26171d896b" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="0d4339d2-0891-454c-9202-95d6dcc4b965">
+                      <propertyInstance Id="6e27d9ef-81bf-43e7-9f8c-f55870d2ecf8" name="PackageVisibility" value="internal">
+                        <elementDefinition Id="5f5ba9af-1b40-4d24-bde7-893e7aab1a31" />
+                      </propertyInstance>
+                      <elementDefinition Id="f839bb38-05e2-491c-8367-635bed85efee" />
+                    </stereotypeInstanceHasPropertyInstances>
+                  </propertyInstances>
+                </stereotypeInstance>
+              </appliedStereotypesInternal>
+              <elementDefinition Id="ab123392-ceda-4c4b-aa44-44f9d50b9b65" />
+              <targetEnds>
+                <association Id="7be6014a-8c84-48bf-8331-276fa291ab26" isDerived="false" sourceEndRoleName="" targetEndRoleName="_intruments" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="9b5b5f88-018a-408b-8bd0-29331df8bf60" LastKnownName="Instrument" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="221c179b-9703-469d-826a-f91519118740" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="b53cf56b-6f1b-4227-8f31-96d89954be38" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="849c9137-7da7-499c-90c6-30541b72886c" name="_intruments" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <lowerValueInternal>
+                          <literalString Id="79cdb101-06cd-4a2e-95f5-4e5ed4d62b95" name="Lower" value="*">
+                            <elementDefinition Id="1d1a58e7-f686-40c4-bb6a-4dcdc54285b0" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="cdc30847-241e-4c24-ad4a-aeb643685200" name="Upper" value="*">
+                            <elementDefinition Id="be147d48-202c-44d1-829b-dff1986875ce" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="8b32c71d-a5bd-4155-874f-9b9d8a5461ab" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="da85269e-380f-424d-bfcb-44d232a15222" />
+                </association>
+                <association Id="fc9a2261-50c6-449b-8eb0-abe8d6cecf70" isDerived="false" sourceEndRoleName="" targetEndRoleName="_notes" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="e61c3f68-b75a-4249-b8c0-c2aa4385b69a" LastKnownName="Note" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="198821c5-d56f-44d0-9a59-e53680c23367" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="025ce754-3879-43a2-ba53-aa2aa139984a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="18bd61db-007a-4465-a787-35cc8c02e548" name="_notes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <lowerValueInternal>
+                          <literalString Id="25d4f72d-ce29-44c6-9458-c0cccc5b09d4" name="Lower" value="*">
+                            <elementDefinition Id="625b0625-ba5c-4217-bf23-74188715070e" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="0a1c44ab-265b-46e1-83ad-88c3e63edfbc" name="Upper" value="*">
+                            <elementDefinition Id="e1723f61-edba-458a-a125-1863c88876cc" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="301083a9-0043-4701-8875-86495ea14797" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="ff5ca1c2-9d53-41f0-930b-ac081462fbb0" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="9182e776-69a4-4ae2-abc2-5aa6acd98856" name="_nbNoteChord" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="4743cfb7-4e96-444c-bb4f-e1457417adda" name="property" profile="CSharpProfile">
+                      <elementDefinition Id="d1d0284e-897a-4b32-b99c-e57cb2b74a3d" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="66b466bf-da13-4503-8102-318fdbc19bb9">
+                          <propertyInstance Id="bc689bc9-a67b-4e5b-a64e-5f351888ad64" name="ClrAttributes">
+                            <elementDefinition Id="09fd4cd8-9e7a-4a39-b65c-69f5c66c39aa" />
+                          </propertyInstance>
+                          <elementDefinition Id="4e9a64df-35df-474a-813c-c434c01649aa" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="fa38f1a8-1035-4c01-8225-13019b094d37">
+                          <propertyInstance Id="02889627-dff3-4fe2-89eb-f98c36623e54" name="Get" value="none">
+                            <elementDefinition Id="f61de4b5-46e4-43da-9e5d-045835810961" />
+                          </propertyInstance>
+                          <elementDefinition Id="74ec7a20-856b-4b45-aabd-18253e5f2115" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="9cef2bd8-5c16-47ec-9270-f0d0613a6035">
+                          <propertyInstance Id="8187dcfb-2a86-4a27-97ef-a5596946c38b" name="HasBody" value="false">
+                            <elementDefinition Id="783888fd-5c19-4cc0-a4ad-eb6f8246206b" />
+                          </propertyInstance>
+                          <elementDefinition Id="597851d0-58af-4c0d-8023-a64cc541fca4" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="7d10d55b-b57c-421a-a220-71fb04a43fb1">
+                          <propertyInstance Id="91778326-55cc-46f5-9c67-1785024c0b40" name="IsUnsafe" value="false">
+                            <elementDefinition Id="8b8a86c7-577c-41ad-b68a-8953c50a6c9b" />
+                          </propertyInstance>
+                          <elementDefinition Id="6c77abf7-8501-41a5-8db7-107fd2199fb2" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="9765e79f-7b18-421c-846e-db425dc53988">
+                          <propertyInstance Id="ca89f46c-877e-449b-a58e-b8e3a8766fe1" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="542c194d-8ad9-44fe-baab-7845a3b1f969" />
+                          </propertyInstance>
+                          <elementDefinition Id="37f0ed89-ca6f-43cb-9946-fb5475ee62e6" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="f870e178-478f-46e5-a87f-c3593a40d9ed">
+                          <propertyInstance Id="82e6f713-deea-4567-b602-ee47ca764931" name="Set" value="none">
+                            <elementDefinition Id="50fe0aab-1675-4971-b319-3860f5dcb63e" />
+                          </propertyInstance>
+                          <elementDefinition Id="18c02d66-d24a-478f-82b8-545de6605ccf" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="97afa5d1-9517-4b9f-b135-df47825103f6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b2af2d39-4f23-46a3-b5cc-16ddc9fe1540" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </property>
+                <property Id="8554abd6-953d-4838-8549-d4375ffec829" name="_maxNote" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="d6682123-4193-48a3-957a-97b3e6e9f736" name="property" profile="CSharpProfile">
+                      <elementDefinition Id="1bc39f8e-1f3e-49cc-8b02-3c5a8c01fdfb" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="08153ef9-f9d7-46c8-a9a5-87b9f9c4c494">
+                          <propertyInstance Id="97653d1c-d1ab-4097-9bb0-29b7dc0babed" name="ClrAttributes">
+                            <elementDefinition Id="07c4d562-4ca7-48aa-9691-36c82fbc2946" />
+                          </propertyInstance>
+                          <elementDefinition Id="297acfe7-bb1f-43c7-96f6-d7fbd23c1dbd" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="1b7a51d4-9c1a-4bf0-aa95-c36f3ed649f5">
+                          <propertyInstance Id="f70d85b1-66b6-4df9-aeb9-9d050ec27b8f" name="Get" value="none">
+                            <elementDefinition Id="0c4aaae6-908a-4517-b215-7e6502ad609f" />
+                          </propertyInstance>
+                          <elementDefinition Id="38fa8fda-7b9d-4333-82df-5e925cb38ca3" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="07ee1157-a6de-4471-939e-516b50f7d24b">
+                          <propertyInstance Id="7e8ed758-bd1d-4fcc-afe8-4b8b6c85fefe" name="HasBody" value="false">
+                            <elementDefinition Id="e0b3a78d-df01-46a3-931e-8103ee1c49fb" />
+                          </propertyInstance>
+                          <elementDefinition Id="d8bac922-6310-4fd1-8295-f81c2fece9c2" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="7b744907-8a8f-45cb-8bfb-feddcb8517a7">
+                          <propertyInstance Id="8bb99536-c012-4b96-9059-0b25b1b7f055" name="IsUnsafe" value="false">
+                            <elementDefinition Id="656eb495-2b02-459f-a5b0-0cef27ca8053" />
+                          </propertyInstance>
+                          <elementDefinition Id="a46fdf93-78e8-47f7-958e-f8e6be588e7b" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="7b80bd28-4043-485a-8cfe-953652436179">
+                          <propertyInstance Id="b57af0f3-f93c-40ae-9f50-eb6e82e0c251" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="f47f2790-b38d-418f-acea-d49af1bb1f4d" />
+                          </propertyInstance>
+                          <elementDefinition Id="e02fdada-e8ef-4ee7-bee8-61d9b7b204c8" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="c742e3e2-1642-45cb-948d-533d13f3ecc8">
+                          <propertyInstance Id="9c1b2664-debb-4f44-8127-5a427db7ebe2" name="Set" value="none">
+                            <elementDefinition Id="ea1cf79a-d9d5-499b-96de-7b6dceb65cb7" />
+                          </propertyInstance>
+                          <elementDefinition Id="852458ae-af51-482f-9780-313970030e10" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="f9ff289f-bb69-415b-9cd7-ea5c0221ea06" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dc691597-17db-45ef-8b6b-c7c101293750" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </property>
+                <property Id="e50ef341-44d0-4d7a-9af5-a7b82428b257" name="_ currentInstrument" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="798eb373-f821-4495-b0ef-32817e6af7f3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="141b9b36-e568-43c2-83e1-cfc21b3e5c41" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="1305861f-d927-4562-927f-815ed8dd05c4" name="addNote" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="39efa337-7042-42e6-bf91-c9b8aa8d33e3" name="method" profile="CSharpProfile">
+                      <elementDefinition Id="54f45abf-6239-4b8d-9453-bf089fc3b983" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="2a4a0cc9-932d-4cd6-9376-1c31188165e1">
+                          <propertyInstance Id="46e8e0ad-cbf4-475f-9f1b-b874b5924dfd" name="ClrAttributes">
+                            <elementDefinition Id="8d549cc5-dd3b-470c-9657-5bfcb2a05768" />
+                          </propertyInstance>
+                          <elementDefinition Id="07e65a8a-bdb8-46b8-b8d8-928595104fd7" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="d480f7f8-3fa6-47ba-b914-25ec40b307a3">
+                          <propertyInstance Id="c50bff4c-3665-4343-9399-a1b7315926fa" name="IsPartial" value="false">
+                            <elementDefinition Id="0e83a4db-12ab-410c-aa01-486af417c95a" />
+                          </propertyInstance>
+                          <elementDefinition Id="8c6ec223-59fe-49f2-92b7-4513a175f74e" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="c30f0ca8-477f-4726-b266-aa4dda7b4c0c">
+                          <propertyInstance Id="2d6d4eae-e1eb-40ea-a308-2fc25d7edbee" name="IsUnsafe" value="false">
+                            <elementDefinition Id="452907af-ea99-41c1-bcab-372ac14724ba" />
+                          </propertyInstance>
+                          <elementDefinition Id="cbcb2f99-a1ae-4000-aa79-42d3b54567b1" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="ebceed8b-e89f-4de5-a346-5f0469fdb880">
+                          <propertyInstance Id="4391cf17-d1e1-45fa-9272-270e788e0fb2" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="bd1d754c-1866-4f92-ab3f-fd01787beb61" />
+                          </propertyInstance>
+                          <elementDefinition Id="252278ca-884e-4e5a-aba6-ffdec49f407a" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="6fc3d2bc-85aa-4428-b323-d68cee9a8ae1">
+                          <propertyInstance Id="3cff5931-cf79-4e99-944c-fc4adf12e1ea" name="params" value="false">
+                            <elementDefinition Id="26f93707-3bb5-47bd-8081-3df6eadab09c" />
+                          </propertyInstance>
+                          <elementDefinition Id="e1382bdd-d2b3-46e7-95ec-f328a4534ce0" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="9bede5b9-946e-45d7-b09e-b00f71adfc9f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="82b8cd23-1d8f-48ca-88dd-76458f967cf3" name="nb" direction="In" isUnique="false">
+                        <elementDefinition Id="782530ce-e18c-499c-8db2-d97d91929456" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="73af3396-34b4-46d7-bd8d-7dc90d734448" LastKnownName="NoteBubble" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="92ea0917-f806-4fd5-8ffe-d5ccf490bffa" name="Stave" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="73f8b9af-15d8-4168-8287-1289a8ca90ef" name="method" profile="CSharpProfile">
+                      <elementDefinition Id="a8a71032-83ab-412a-be47-14300c925a3a" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="ff95e16a-6e0a-4c4e-a1cb-cc9b6c1c24a2">
+                          <propertyInstance Id="448ae6dc-c813-462c-ae4f-b1b2f667b05d" name="ClrAttributes">
+                            <elementDefinition Id="91acc656-c083-41b2-a2c7-4763d09639a8" />
+                          </propertyInstance>
+                          <elementDefinition Id="521faff6-ae40-46d8-a960-760168cceab8" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="39ce8917-920c-4d69-b978-46d9eafefaa8">
+                          <propertyInstance Id="e30c6a19-5140-4087-9185-e42e04a3be99" name="IsPartial" value="false">
+                            <elementDefinition Id="0b8b27bd-7c63-4ee3-a85a-06bf89fbdc2d" />
+                          </propertyInstance>
+                          <elementDefinition Id="a8a90195-d7fe-43b2-b479-66e5ea3902ac" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="eed9b014-70bf-4467-bf4f-6a3696bf03a4">
+                          <propertyInstance Id="619f7746-71b0-4968-83fa-470899fde0f9" name="IsUnsafe" value="false">
+                            <elementDefinition Id="72a09329-1b66-4acd-ba06-239fdb642c2e" />
+                          </propertyInstance>
+                          <elementDefinition Id="86aa8f4f-2a20-49bc-8613-8acab3f6431d" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="c0a8d57e-69a4-401b-be98-cee0f3a815ab">
+                          <propertyInstance Id="26361b42-0818-4a3d-93a7-5d32daa4f1e0" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="88633b90-68e8-4d90-8863-a63b15d66a8b" />
+                          </propertyInstance>
+                          <elementDefinition Id="b10e9d62-08f5-4463-9df3-35b85391c130" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="c6174245-1a24-4e49-86e6-0dbdc3dd344d">
+                          <propertyInstance Id="701852ab-c226-41fc-bab2-d24b335d78f6" name="params" value="false">
+                            <elementDefinition Id="d2c7b882-04ec-4a2d-9665-4f7e01ce43fb" />
+                          </propertyInstance>
+                          <elementDefinition Id="516ccf11-7e32-449b-bdfa-9ca225143ea5" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="4f78200e-d52b-4802-9dd0-d20bcbca846f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0f3dd51a-af31-4b1d-8157-352435ce1f70" name="list" direction="In" isUnique="false">
+                        <elementDefinition Id="25e61661-23dc-496d-a9f6-b15b96d028bd" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="6544cf88-ccdb-42ea-90e1-c84f5182c384" LastKnownName="List&lt;Instrument&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="683db24a-9fbe-4ba5-a642-d68e29ced22a" name="max" direction="In" isUnique="false">
+                        <elementDefinition Id="613bc391-0abc-42f9-add4-c6a7c43aef2d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="053b0c06-bab1-4fca-8bff-d5e66e05d256" name="nbChord" direction="In" isUnique="false">
+                        <elementDefinition Id="754b5eb0-400d-4773-90fb-717997a6d11d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="ee78db32-40f8-408d-ae01-4737c9fe938e" LastKnownName="Integer" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="84dcfd59-478a-403f-b1c9-273a9695bc52" name="addMelody" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="24b78374-da5f-4d42-a927-46892a47ad3f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="df02cb6f-6aed-4c54-9afa-10e899dc79cb" name="mb" direction="In" isUnique="false">
+                        <elementDefinition Id="e07a8f3a-a333-43d7-bb5c-120e5bd38273" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="cbb850fb-d0c0-447f-a77b-c471461e88c1" LastKnownName="MelodyBubble" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="7539363d-2000-4ef4-b2ca-a7395a92c99c" name="playAllNotes" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="79a37356-d94f-43d3-8540-4add268f9575" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="2b1b9b5e-7996-4ad5-a879-2bc605e27a13" name="AudioController" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="fcff62e8-af19-4ed5-8ebf-6243db321220" />
+              <ownedAttributesInternal>
+                <property Id="c28d4043-3a2e-4924-9a03-c3b3a83c58a5" name="_audioEngine" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1c56fdad-ed28-4abd-b2f9-8d219dcda506" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="74231dd2-388a-4c29-b69d-9affd30627e4" LastKnownName="AudioEngine" />
+                  </type_NamedElement>
+                </property>
+                <property Id="e17cf54d-84df-4173-b384-08ae0d5f0815" name="_waveBank" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eb5a7d40-4f60-40ed-a1bd-796f8e402cda" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4de79cba-8f01-4e3f-a09c-af347a2e868f" LastKnownName="WaveBank" />
+                  </type_NamedElement>
+                </property>
+                <property Id="18fab0e2-4962-402d-91f7-aa0c4a2bd69a" name="_soundBank" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="true" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="23e5723e-cb24-4bb3-ad71-8dfaf6735bad" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6bb878d6-f843-4ee8-8931-704edabc482c" LastKnownName="SoundBank" />
+                  </type_NamedElement>
+                </property>
+                <property Id="d9881c39-9a25-4c07-99ae-8ac1b2138d7d" name="INSTANCE" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f049342a-6757-466e-af6c-09c95e8b73b1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b2528ef9-5f08-423f-9dea-cf8cf6adb362" LastKnownName="AudioController" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="4f0fd2cb-ed1b-4cce-b870-b0ef090c44cc" name="loadAudioEngine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0e546b54-9252-4c10-b232-d140aa72a5d4" />
+                </operation>
+                <operation Id="bdc9d5dd-3d78-49b4-bb38-14098bd12f9b" name="playSound" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ea01bdbd-101e-414a-91ec-d896772a4981" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="496d37ba-631c-4169-935d-7156819eb105" name="sound" direction="In" isUnique="false">
+                        <elementDefinition Id="179d2865-ba99-4f74-b1fd-4ca6ecbe9316" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="27d1d5cb-3d7b-4d91-9f2f-e2c0ecffc019" LastKnownName="String" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="3b98f37f-9a25-4449-929b-1d79367511f1" name="AudioController" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="68ed32dc-91aa-4fe1-b40e-dafb7bd0ae1f" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9b5b5f88-018a-408b-8bd0-29331df8bf60" name="Instrument" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="38b5aabe-1de2-4f01-8aab-3d9d2e5515c3" />
+              <ownedAttributesInternal>
+                <property Id="84826232-35ef-4215-b126-040bc322e637" name="_name" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="25c44518-a900-44fb-9fe6-243d56a08c24" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01e1d8a9-e0d6-4d96-a20b-d87ec2a6de36" LastKnownName="InstrumentType" />
+                  </type_NamedElement>
+                </property>
+                <property Id="50010d79-36f0-4e59-ab4b-1edb300a6206" name="_sounds" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="25e131ae-cb68-4632-ab17-ab77e965e9da" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6008e687-1d7a-4627-b255-01871e2e56ce" LastKnownName="Dictionnary&lt;PitchClass, String&gt;" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="7fc05b86-9384-4e94-9e51-fb13cbf406f7" name="playNote" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2f16c274-5efc-46f0-aa62-66b827937e96" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a0ed26a0-4a3f-4112-b93d-e1c8f2d748c3" name="n" direction="In" isUnique="false">
+                        <elementDefinition Id="e754a9a9-7487-4804-9fbe-d75b9617ab35" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="2d476c04-fb88-404c-bbcf-d7e2a3ed27f5" LastKnownName="Note" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d3b0e02c-1d3f-4f0f-b5ef-119a03bc1e06" name="NoteBubbleGenerator" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="60f713d3-0f85-425e-b4f2-c7ede6c0ccef" />
+              <targetEnds>
+                <association Id="0ad1743e-c54c-48d7-8d36-654e65a0fa65" isDerived="false" sourceEndRoleName="" targetEndRoleName="_noteBubbles" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="150c2154-c9d9-4ef2-bd9f-e1c4689234a3" LastKnownName="NoteBubble" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="3b577e62-8240-42d6-bd4b-2044a363aafc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="23152866-705f-4172-9e55-2460cee89372" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="bc0f1e37-2154-42d8-9f60-62ddc786d3c8" name="_noteBubbles" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <lowerValueInternal>
+                          <literalString Id="f9f40b50-6724-4d08-b9ea-41980323d2e9" name="Lower" value="*">
+                            <elementDefinition Id="34967a33-f839-4e04-a822-8ae8afcd7a21" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="54dfae7e-0208-4c25-8874-a94e8c6111e6" name="Upper" value="*">
+                            <elementDefinition Id="438078ef-aeed-40a2-851b-df88b7e6c944" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="7eaf7fee-4e99-48e0-a225-e42cbd3f4606" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="2c77bd80-0fa9-47ce-84cb-f00c6c60cfc0" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="a9cb9119-a3f6-4190-b2d7-c0ed93b13ee2" name="createNoteBubble" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="47fc95bf-1c80-466e-9a06-90b259127cd3" />
+                </operation>
+                <operation Id="c53eb851-3c2c-43d7-bf39-b6e0a1f204ed" name="removeFromGenerator" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ed937b82-ff88-405d-9ac8-d3df94c55d89" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="19358e74-d376-4fe9-82bc-16e4c9d03b0e" name="b" direction="In" isUnique="false">
+                        <elementDefinition Id="26fde8f1-e0bb-4c33-9079-2cd38f3f9a34" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="73af3396-34b4-46d7-bd8d-7dc90d734448" LastKnownName="NoteBubble" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
   </packagedElements>
   <package Id="29d9b4e7-84d6-46cc-adc2-1b06be57f92e" name="modele">
     <elementDefinition Id="071e5591-5d99-4099-80a0-fe8c8f2ff67e" />

@@ -17,6 +17,25 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
+    <Content Include="ModelDefinition\Package_1443.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1447.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1535.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1539.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="resume.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="resume.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>resume.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ViewModel.classdiagram">
       <SubType>Content</SubType>
     </Content>
