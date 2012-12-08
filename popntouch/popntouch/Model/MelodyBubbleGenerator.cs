@@ -11,6 +11,7 @@ namespace popntouch.Model
 
         public MelodyBubbleGenerator()
         {
+            melodyBubbles = new List<MelodyBubble>();
         }
 
         #endregion // Constructors
@@ -29,10 +30,13 @@ namespace popntouch.Model
 
         public void createMelodyBubble()
         {
+            //Algorithme de création en fonction de ce qu'il y a déjà dans le tableau
         }
 
         public void removeFromGenerator(MelodyBubble b)
         {
+            MelodyBubble bubble = melodyBubbles.Find(e => e == b);
+            melodyBubbles.Remove(bubble);
         }
 
         #endregion //Methods

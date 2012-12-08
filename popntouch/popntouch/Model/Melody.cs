@@ -9,8 +9,9 @@ namespace popntouch.Model
     {
         #region Constructors
 
-        public Melody()
+        public Melody(List<Note> list)
         {
+            notes = list;
         }
 
         #endregion // Constructors

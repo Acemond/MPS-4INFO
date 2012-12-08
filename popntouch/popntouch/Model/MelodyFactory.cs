@@ -13,7 +13,19 @@ namespace popntouch.Model
             List<Note> corners = new List<Note>();
             corners.Add(new Note(1, NoteValue.EightNote));
 
+            List<Note> infinites = new List<Note>();
+            infinites.Add(new Note(1, NoteValue.EightNote));
+
+            List<Note> squares = new List<Note>();
+            squares.Add(new Note(1, NoteValue.EightNote));
+
+            List<Note> waves = new List<Note>();
+            waves.Add(new Note(1, NoteValue.EightNote));
+
             melodies.Add(Gesture.Corner, corners);
+            melodies.Add(Gesture.Infinite, infinites);
+            melodies.Add(Gesture.Square, squares);
+            melodies.Add(Gesture.Wave, waves);
         }
 
         #endregion // Constructors
@@ -34,8 +46,9 @@ namespace popntouch.Model
 
         public Melody createMelody(Gesture g)
         {
-            return new Melody();
+                return new Melody(melodies[g]);
         }
+
         #endregion //Methods
     }
 }
