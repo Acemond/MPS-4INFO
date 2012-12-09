@@ -1,0 +1,10 @@
+Z:\project\popntouch\popntouch\obj\Debug\popntouch.csprojResolveAssemblyReference.cache
+Z:\project\popntouch\popntouch\obj\Debug\SurfaceWindow1.baml
+Z:\project\popntouch\popntouch\obj\Debug\App.baml
+Z:\project\popntouch\popntouch\obj\Debug\SurfaceWindow1.g.cs
+Z:\project\popntouch\popntouch\obj\Debug\App.g.cs
+Z:\project\popntouch\popntouch\obj\Debug\popntouch_Content.g.cs
+Z:\project\popntouch\popntouch\obj\Debug\popntouch_MarkupCompile.cache
+Z:\project\popntouch\popntouch\obj\Debug\popntouch.g.resources
+Z:\project\popntouch\popntouch\obj\Debug\popntouch.Properties.Resources.resources
+Z:\project\popntouch\popntouch\obj\Debug\popntouch.csproj.GenerateResource.Cache

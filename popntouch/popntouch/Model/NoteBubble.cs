@@ -7,11 +7,11 @@ namespace popntouch.Model
 {
     class NoteBubble
     {
-        #region Constructors
-        #endregion // Constructors
-
         #region Properties
         #endregion // Properties
+        
+        #region Constructors
+        #endregion // Constructors
 
         #region Methods
         #endregion //Methods

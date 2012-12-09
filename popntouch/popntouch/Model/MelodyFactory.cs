@@ -7,20 +7,30 @@ namespace popntouch.Model
 {
     class MelodyFactory
     {
+
+        #region Properties
+
+        public static readonly MelodyFactory INSTANCE = new MelodyFactory();
+        public Dictionary<Gesture, List<Note>> melodies { get;  set; }
+
+        #endregion // Properties
+
         #region Constructors
         private MelodyFactory()
         {
             List<Note> corners = new List<Note>();
-            corners.Add(new Note(1, NoteValue.EightNote));
+            corners.Add(new Note(1, NoteValue.EightNote, PitchClass.A));
+            corners.Add(new Note(1, NoteValue.EightNote, PitchClass.B));
+            corners.Add(new Note(1, NoteValue.EightNote, PitchClass.C));
 
             List<Note> infinites = new List<Note>();
-            infinites.Add(new Note(1, NoteValue.EightNote));
+            infinites.Add(new Note(1, NoteValue.EightNote, PitchClass.A));
 
             List<Note> squares = new List<Note>();
-            squares.Add(new Note(1, NoteValue.EightNote));
+            squares.Add(new Note(1, NoteValue.EightNote, PitchClass.A));
 
             List<Note> waves = new List<Note>();
-            waves.Add(new Note(1, NoteValue.EightNote));
+            waves.Add(new Note(1, NoteValue.EightNote, PitchClass.A));
 
             melodies.Add(Gesture.Corner, corners);
             melodies.Add(Gesture.Infinite, infinites);
@@ -30,23 +40,11 @@ namespace popntouch.Model
 
         #endregion // Constructors
 
-        #region Properties
-
-        public MelodyFactory INSTANCE = new MelodyFactory();
-
-        public Dictionary<Gesture, List<Note>> melodies
-        {
-            get;
-            set;
-        }
-
-        #endregion // Properties
-
         #region Methods
 
         public Melody createMelody(Gesture g)
         {
-                return new Melody(melodies[g]);
+                return new Melody(g, melodies[g]);
         }
 
         #endregion //Methods

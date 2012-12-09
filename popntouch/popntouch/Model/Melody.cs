@@ -7,30 +7,21 @@ namespace popntouch.Model
 {
     class Melody
     {
+        #region Properties
+            public List<Note> notes { get; set; }
+            public Gesture symbol { get; set; }
+        #endregion 
+
         #region Constructors
 
-        public Melody(List<Note> list)
+        public Melody( Gesture g, List<Note> list)
         {
             notes = list;
+            symbol = g;
         }
 
         #endregion // Constructors
 
-        #region Properties
-
-        public List<Note> notes
-        {
-            get;
-            set;
-        }
-
-        public Gesture symbol
-        {
-            get;
-            set;
-        }
-
-        #endregion // Properties
 
         #region Methods
         #endregion //Methods

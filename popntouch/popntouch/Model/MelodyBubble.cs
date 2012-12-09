@@ -7,6 +7,12 @@ namespace popntouch.Model
 {
     class MelodyBubble
     {
+        #region Properties
+
+        public Melody melody { get; set; }
+
+        #endregion // Properties
+
         #region Constructors
 
         public MelodyBubble(Melody m)
@@ -15,16 +21,6 @@ namespace popntouch.Model
         }
 
         #endregion // Constructors
-
-        #region Properties
-
-        public Melody melody
-        {
-            get;
-            set;
-        }
-
-        #endregion // Properties
 
         #region Methods
         #endregion //Methods

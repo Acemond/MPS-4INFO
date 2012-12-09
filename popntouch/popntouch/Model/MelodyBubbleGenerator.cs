@@ -7,6 +7,13 @@ namespace popntouch.Model
 {
     class MelodyBubbleGenerator
     {
+
+        #region Properties
+
+        public List<MelodyBubble> melodyBubbles { get; set; }
+
+        #endregion // Properties
+
         #region Constructors
 
         public MelodyBubbleGenerator()
@@ -16,21 +23,16 @@ namespace popntouch.Model
 
         #endregion // Constructors
 
-        #region Properties
-
-        public List<MelodyBubble> melodyBubbles
-        {
-            get;
-            set;
-        }
-
-        #endregion // Properties
-
         #region Methods
 
+        // Generates a MelodyBubble and add it to its melodyBubbles
         public void createMelodyBubble()
         {
-            //Algorithme de création en fonction de ce qu'il y a déjà dans le tableau
+            Random r = new Random();
+            // Number of gestures defined
+            int total = Enum.GetValues(typeof(Gesture)).Length;
+            Melody m = MelodyFactory.INSTANCE.createMelody((Gesture) r.Next(total));
+            melodyBubbles.Add(new MelodyBubble(m));
         }
 
         public void removeFromGenerator(MelodyBubble b)

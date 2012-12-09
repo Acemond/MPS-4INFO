@@ -65,6 +65,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Model\AudioController.cs" />
+    <Compile Include="Model\Enum.cs" />
     <Compile Include="Model\Gesture.cs" />
     <Compile Include="Model\InstrumentType.cs" />
     <Compile Include="Model\Melody.cs" />
