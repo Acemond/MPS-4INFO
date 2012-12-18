@@ -17,13 +17,6 @@ namespace popntouch.Model
 
         #region Constructors
 
-        public Note(int oct, NoteValue value)
-        {
-            _octave = oct;
-            _duration = value;
-            _pitch = PitchClass.None;
-        }
-
         // Constructor used by MelodyFactory
         public Note(int oct, NoteValue value, PitchClass p)
         {
