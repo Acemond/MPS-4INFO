@@ -57,8 +57,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\Instrument.cs" />
+    <Compile Include="SurfaceWindow.xaml.cs">
+      <DependentUpon>SurfaceWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\StaveViewModel.cs" />
-    <Page Include="SurfaceWindow1.xaml">
+    <Page Include="SurfaceWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -77,10 +80,6 @@
     <Compile Include="Model\NoteBubbleGenerator.cs" />
     <Compile Include="Model\NoteFactory.cs" />
     <Compile Include="Model\Stave.cs" />
-    <Compile Include="SurfaceWindow1.xaml.cs">
-      <DependentUpon>SurfaceWindow1.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
