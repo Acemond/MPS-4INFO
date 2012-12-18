@@ -383,9 +383,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="fe8e759b-e5ab-478d-8027-d07e57f0985c"
-                LastKnownName="Dictionnary&lt;Gesture, List&lt;Note&gt;&gt;"
-                LastKnownLocation="modele.uml" />
+                Id="ebc75527-d7c8-4c45-a070-4200356d61d1"
+                LastKnownName="Dictionary&lt;Gesture, List&lt;Note&gt;&gt;"
+                LastKnownLocation="Package_1535.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -802,6 +802,13 @@
                       name="Set"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53a27761-4a4f-4993-9ed6-15c7dc610dee">
+                    <propertyInstance
+                      Id="e96a2b20-6e2d-4007-83de-6e73d382fcdb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
@@ -871,6 +878,13 @@
                       name="Set"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0554bcb-31fd-4cc8-8071-d3a68334cd25">
+                    <propertyInstance
+                      Id="3c2a99ae-b53d-4b7c-b1df-203b79cfbc01"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
@@ -894,10 +908,10 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
-                LastKnownLocation="modele.uml" />
+              <undefinedTypeMoniker
+                Id="541f3d18-9ddc-4191-87c4-37b0c2759fc4"
+                LastKnownName="InstrumentType"
+                LastKnownLocation="Package_1535.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -949,6 +963,13 @@
                       Id="26f93707-3bb5-47bd-8081-3df6eadab09c"
                       name="params"
                       value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92cc6aa6-e055-4efd-8832-7c50c54e2594">
+                    <propertyInstance
+                      Id="09bab14c-ff39-4982-b101-334b4a60aed2"
+                      name="Inheritance"
+                      value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                 </propertyInstances>
               </stereotypeInstance>
@@ -1017,6 +1038,13 @@
                       Id="d2c7b882-04ec-4a2d-9665-4f7e01ce43fb"
                       name="params"
                       value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e28318c-2d33-4d00-bc5b-9d3576a3b1ed">
+                    <propertyInstance
+                      Id="77391e49-a6ef-45b1-9cd1-56d063152ab0"
+                      name="Inheritance"
+                      value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                 </propertyInstances>
               </stereotypeInstance>
@@ -1273,9 +1301,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="555c2845-4b56-4ec0-94fd-06ec6c908301"
-                LastKnownName="Dictionnary&lt;PitchClass, String&gt;"
-                LastKnownLocation="modele.uml" />
+                Id="67c24b66-def1-4427-82c0-f6ba5ba1d908"
+                LastKnownName="Dictionary&lt;PitchClass, String&gt;"
+                LastKnownLocation="Package_1535.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1405,6 +1433,21 @@
           </operation>
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="541f3d18-9ddc-4191-87c4-37b0c2759fc4"
+        name="InstrumentType" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="67c24b66-def1-4427-82c0-f6ba5ba1d908"
+        name="Dictionary&lt;PitchClass, String&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ebc75527-d7c8-4c45-a070-4200356d61d1"
+        name="Dictionary&lt;Gesture, List&lt;Note&gt;&gt;" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

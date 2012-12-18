@@ -37,18 +37,8 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="6008e687-1d7a-4627-b255-01871e2e56ce" name="Dictionnary&lt;PitchClass, String&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionnary&lt;PitchClass, String&gt;">
-        <elementDefinition Id="555c2845-4b56-4ec0-94fd-06ec6c908301" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="bb6018fd-eebf-43b6-814a-e5421625d8e3" name="NoteValue" isAbstract="false" isLeaf="false" cachedFullName="NoteValue">
         <elementDefinition Id="742aec7f-3374-4b04-9ffa-1331daa2f5cb" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="00c8fda2-772e-4e1e-9d0f-0dc8f954b275" name="Dictionnary&lt;Gesture, List&lt;Note&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionnary&lt;Gesture, List&lt;Note&gt;&gt;">
-        <elementDefinition Id="fe8e759b-e5ab-478d-8027-d07e57f0985c" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -68,11 +58,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <referencedType Id="b2af2d39-4f23-46a3-b5cc-16ddc9fe1540" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="141b9b36-e568-43c2-83e1-cfc21b3e5c41" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
       </referencedType>
     </packageHasNamedElement>
@@ -413,7 +398,7 @@
                 <property Id="52250641-c06c-495e-9300-e125be9c0f8a" name="_melodies" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="15b0c8b5-e0d2-4bbd-acef-e88650581e88" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="00c8fda2-772e-4e1e-9d0f-0dc8f954b275" LastKnownName="Dictionnary&lt;Gesture, List&lt;Note&gt;&gt;" />
+                    <referencedTypeMoniker Id="1be4d3b6-f6b1-4d49-a731-876b2b6a24aa" LastKnownName="Dictionary&lt;Gesture, List&lt;Note&gt;&gt;" />
                   </type_NamedElement>
                 </property>
               </ownedAttributesInternal>
@@ -628,6 +613,12 @@
                           </propertyInstance>
                           <elementDefinition Id="18c02d66-d24a-478f-82b8-545de6605ccf" />
                         </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="fcfb89fd-358c-4182-a8e6-0a0ee06cacff">
+                          <propertyInstance Id="d32d6543-bb95-4fa1-b8c0-5fcff9ad8371" name="Inheritance" value="none">
+                            <elementDefinition Id="e96a2b20-6e2d-4007-83de-6e73d382fcdb" />
+                          </propertyInstance>
+                          <elementDefinition Id="53a27761-4a4f-4993-9ed6-15c7dc610dee" />
+                        </stereotypeInstanceHasPropertyInstances>
                       </propertyInstances>
                     </stereotypeInstance>
                   </appliedStereotypesInternal>
@@ -677,6 +668,12 @@
                           </propertyInstance>
                           <elementDefinition Id="852458ae-af51-482f-9780-313970030e10" />
                         </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="6548cf59-1ead-49cf-83ee-f77ce5c27b49">
+                          <propertyInstance Id="7f27c7b3-89d0-4aa1-8649-c8f9e74198a8" name="Inheritance" value="none">
+                            <elementDefinition Id="3c2a99ae-b53d-4b7c-b1df-203b79cfbc01" />
+                          </propertyInstance>
+                          <elementDefinition Id="a0554bcb-31fd-4cc8-8071-d3a68334cd25" />
+                        </stereotypeInstanceHasPropertyInstances>
                       </propertyInstances>
                     </stereotypeInstance>
                   </appliedStereotypesInternal>
@@ -688,7 +685,7 @@
                 <property Id="e50ef341-44d0-4d7a-9af5-a7b82428b257" name="_ currentInstrument" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="798eb373-f821-4495-b0ef-32817e6af7f3" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="141b9b36-e568-43c2-83e1-cfc21b3e5c41" LastKnownName="Integer" />
+                    <referencedTypeMoniker Id="a40ffbb9-57ef-40cc-8310-9ad4b041093d" LastKnownName="InstrumentType" />
                   </type_NamedElement>
                 </property>
               </ownedAttributesInternal>
@@ -727,6 +724,12 @@
                             <elementDefinition Id="26f93707-3bb5-47bd-8081-3df6eadab09c" />
                           </propertyInstance>
                           <elementDefinition Id="e1382bdd-d2b3-46e7-95ec-f328a4534ce0" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="e3fc40c8-9bfb-41b8-ad1a-d11cdbe805cf">
+                          <propertyInstance Id="e8f8b588-eb42-4452-b740-88ad976ce909" name="Inheritance" value="none">
+                            <elementDefinition Id="09bab14c-ff39-4982-b101-334b4a60aed2" />
+                          </propertyInstance>
+                          <elementDefinition Id="92cc6aa6-e055-4efd-8832-7c50c54e2594" />
                         </stereotypeInstanceHasPropertyInstances>
                       </propertyInstances>
                     </stereotypeInstance>
@@ -777,6 +780,12 @@
                             <elementDefinition Id="d2c7b882-04ec-4a2d-9665-4f7e01ce43fb" />
                           </propertyInstance>
                           <elementDefinition Id="516ccf11-7e32-449b-bdfa-9ca225143ea5" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="43d58771-085d-4300-9b01-e244d91481b6">
+                          <propertyInstance Id="639e44f6-c281-4f7e-9f22-9d89bf78936f" name="Inheritance" value="none">
+                            <elementDefinition Id="77391e49-a6ef-45b1-9cd1-56d063152ab0" />
+                          </propertyInstance>
+                          <elementDefinition Id="6e28318c-2d33-4d00-bc5b-9d3576a3b1ed" />
                         </stereotypeInstanceHasPropertyInstances>
                       </propertyInstances>
                     </stereotypeInstance>
@@ -893,7 +902,7 @@
                 <property Id="50010d79-36f0-4e59-ab4b-1edb300a6206" name="_sounds" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="25e131ae-cb68-4632-ab17-ab77e965e9da" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="6008e687-1d7a-4627-b255-01871e2e56ce" LastKnownName="Dictionnary&lt;PitchClass, String&gt;" />
+                    <referencedTypeMoniker Id="37d4fcf3-765a-44e5-9cdc-71352be98466" LastKnownName="Dictionary&lt;PitchClass, String&gt;" />
                   </type_NamedElement>
                 </property>
               </ownedAttributesInternal>
@@ -968,6 +977,21 @@
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="a40ffbb9-57ef-40cc-8310-9ad4b041093d" name="InstrumentType" isAbstract="false" isLeaf="false" cachedFullName="InstrumentType">
+        <elementDefinition Id="541f3d18-9ddc-4191-87c4-37b0c2759fc4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="37d4fcf3-765a-44e5-9cdc-71352be98466" name="Dictionary&lt;PitchClass, String&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionary&lt;PitchClass, String&gt;">
+        <elementDefinition Id="67c24b66-def1-4427-82c0-f6ba5ba1d908" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1be4d3b6-f6b1-4d49-a731-876b2b6a24aa" name="Dictionary&lt;Gesture, List&lt;Note&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionary&lt;Gesture, List&lt;Note&gt;&gt;">
+        <elementDefinition Id="ebc75527-d7c8-4c45-a070-4200356d61d1" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="29d9b4e7-84d6-46cc-adc2-1b06be57f92e" name="modele">
     <elementDefinition Id="071e5591-5d99-4099-80a0-fe8c8f2ff67e" />
