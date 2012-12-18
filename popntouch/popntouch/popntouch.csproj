@@ -66,8 +66,6 @@
     </Compile>
     <Compile Include="Model\AudioController.cs" />
     <Compile Include="Model\Enum.cs" />
-    <Compile Include="Model\Gesture.cs" />
-    <Compile Include="Model\InstrumentType.cs" />
     <Compile Include="Model\Melody.cs" />
     <Compile Include="Model\MelodyBubble.cs" />
     <Compile Include="Model\MelodyBubbleGenerator.cs" />
@@ -76,8 +74,6 @@
     <Compile Include="Model\NoteBubble.cs" />
     <Compile Include="Model\NoteBubbleGenerator.cs" />
     <Compile Include="Model\NoteFactory.cs" />
-    <Compile Include="Model\NoteValue.cs" />
-    <Compile Include="Model\PitchClass.cs" />
     <Compile Include="Model\Stave.cs" />
     <Compile Include="SurfaceWindow1.xaml.cs">
       <DependentUpon>SurfaceWindow1.xaml</DependentUpon>

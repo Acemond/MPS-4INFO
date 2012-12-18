@@ -9,9 +9,9 @@ namespace popntouch.Model
     {
         #region Properties
 
-        public int octave { get; set; }
-        public NoteValue duration{ get; set; }
-        public PitchClass pitch { get; set; }
+        public int _octave { get; set; }
+        public NoteValue _duration{ get; set; }
+        public PitchClass _pitch { get; set; }
 
         #endregion // Properties
 
@@ -19,17 +19,17 @@ namespace popntouch.Model
 
         public Note(int oct, NoteValue value)
         {
-            octave = oct;
-            duration = value;
-            pitch = PitchClass.None;
+            _octave = oct;
+            _duration = value;
+            _pitch = PitchClass.None;
         }
 
         // Constructor used by MelodyFactory
         public Note(int oct, NoteValue value, PitchClass p)
         {
-            octave = oct;
-            duration = value;
-            pitch = p;
+            _octave = oct;
+            _duration = value;
+            _pitch = p;
         }
 
         #endregion // Constructors
