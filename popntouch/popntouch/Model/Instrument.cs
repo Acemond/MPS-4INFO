@@ -15,6 +15,10 @@ namespace popntouch.Model
         #endregion // Properties
 
         #region Constructors
+
+        //Empty constructor (needed for data template in XAML)
+        public Instrument() { }
+
         #endregion // Constructors
 
         #region Methods

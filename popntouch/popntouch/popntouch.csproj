@@ -60,6 +60,7 @@
     <Compile Include="SurfaceWindow.xaml.cs">
       <DependentUpon>SurfaceWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\InstrumentViewModel.cs" />
     <Compile Include="ViewModel\StaveViewModel.cs" />
     <Page Include="SurfaceWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -106,6 +107,8 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\instruments\ocarina.png" />
+    <Resource Include="Resources\instruments\piano.png" />
     <Resource Include="Resources\fond.png" />
     <Content Include="Resources\icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

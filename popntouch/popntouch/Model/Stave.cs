@@ -9,7 +9,7 @@ namespace popntouch.Model
     {
         #region Properties
 
-        public InstrumentType _currentInstrument { get; set; }
+        public Instrument _currentInstrument { get; set; }
         public int _maxNote { get; set; }
         public int _nbNoteChord { get; set; }
         public List<Note> _notes { get; set; }

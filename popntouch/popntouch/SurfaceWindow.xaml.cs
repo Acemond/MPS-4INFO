@@ -15,6 +15,9 @@ using Microsoft.Surface;
 using Microsoft.Surface.Presentation;
 using Microsoft.Surface.Presentation.Controls;
 using Microsoft.Surface.Presentation.Input;
+using popntouch.Model;
+using popntouch.ViewModel;
+
 
 namespace popntouch
 {

@@ -74,7 +74,7 @@ namespace popntouch.Model
         {
             NoteBubble bubble = _noteBubbles.Find(e => e == b);
             _noteBubbles.Remove(bubble);
-        }
+        }*/
 
         #endregion //Methods
     }

@@ -6,12 +6,11 @@ using popntouch.Model;
 
 namespace popntouch.ViewModel
 {
-    class StaveViewModel
+    class InstrumentViewModel
     {
         #region Properties
 
-        public String _stavePath { get; set; }
-        public Stave _stave { get; set; }
+        public Instrument _instrument { get; set; }
 
         #endregion //Properties
 
