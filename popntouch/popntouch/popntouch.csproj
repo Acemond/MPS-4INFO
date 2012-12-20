@@ -105,6 +105,9 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="Resources\music\Sound Bank.xsb" />
+    <None Include="Resources\music\sound.xgs" />
+    <None Include="Resources\music\Wave Bank.xwb" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\instruments\ocarina.png" />
