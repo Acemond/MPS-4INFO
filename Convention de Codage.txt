@@ -1,7 +1,0 @@
- - Des noms d'attributs compréhensibles et/ou bien commentés. 
- - Noms des méthodes explicites sur ce qu'elles font plus que comment elles le font et/ou commentés. 
- - Codage en anglais avec les bons termes (!). 
- - Attributs débutés par un "_" 
- - Interfaces débutés par un "I" 
- - Les attributs avec { get;set; } sont à écrire sur une seule ligne
- - Les constructeurs et méthodes sont à regrouper dans des régions
